@@ -1,0 +1,29 @@
+# Ignorer les fichiers d'environnement Python
+.venv/
+__pycache__/
+__init__.py
+# *.py[cod]
+
+# Ignorer les données sensibles ou volumineuses
+data/Meteo/artifact/df_cleaned_with_stats.csv
+data/Meteo/old/
+dashboard_complet.html
+test_meteo_data.py
+# *.csv
+# *.xlsx
+# *.h5
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
+
+# Ignorer les logs et autres fichiers temporaires
+*.log
+*.tmp
+
+# Ignorer les fichiers spécifiques à votre IDE (PyCharm)
+.idea/
+
+
+
+

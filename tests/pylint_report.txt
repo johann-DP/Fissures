@@ -1,0 +1,2161 @@
+************* Module src.main
+src\main.py:45:0: C0301: Line too long (124/100) (line-too-long)
+src\main.py:117:0: C0301: Line too long (107/100) (line-too-long)
+src\main.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\main.py:7:0: E0401: Unable to import 'analysis.models' (import-error)
+src\main.py:12:0: E0401: Unable to import 'analysis.statistical_analysis' (import-error)
+src\main.py:13:0: E0401: Unable to import 'data_processing.fissures_processing' (import-error)
+src\main.py:14:0: E0401: Unable to import 'data_processing.meteo_processing' (import-error)
+src\main.py:22:0: E0401: Unable to import 'visualization.fissures_visualization' (import-error)
+src\main.py:26:0: E0401: Unable to import 'visualization.meteo_visualization' (import-error)
+src\main.py:34:0: E0401: Unable to import 'visualization.structure_visualization' (import-error)
+src\main.py:83:4: C0103: Variable name "plotly_T" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:84:4: C0103: Variable name "plotly_TmM" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:85:4: C0103: Variable name "plotly_Hum" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:87:4: C0103: Variable name "plotly_WindSpeed" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:87:22: C0103: Variable name "plotly_WindDir" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:88:4: C0103: Variable name "plotly_LightUV" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:137:27: C0103: Variable name "plotly_RLevol" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:138:4: C0103: Variable name "plotly_LRFissure" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:130:8: W0612: Unused variable 'second_phase_data' (unused-variable)
+src\main.py:131:8: W0612: Unused variable 'third_phase_data' (unused-variable)
+src\main.py:132:8: W0612: Unused variable 'fourth_phase_data' (unused-variable)
+src\main.py:133:8: W0612: Unused variable 'fifth_phase_data' (unused-variable)
+src\main.py:134:8: W0612: Unused variable 'sixth_phase_data' (unused-variable)
+src\main.py:137:4: W0612: Unused variable 'regression_results_df' (unused-variable)
+src\main.py:155:0: R0914: Too many local variables (21/15) (too-many-locals)
+src\main.py:167:4: C0103: Variable name "X" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:172:45: C0103: Variable name "X_test" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:176:4: C0103: Variable name "plotly_FIfglm" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:176:19: C0103: Variable name "plotly_FIrf" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:176:32: C0103: Variable name "plotly_FIgb" doesn't conform to snake_case naming style (invalid-name)
+src\main.py:193:8: W0612: Unused variable 'paliers_old' (unused-variable)
+src\main.py:195:8: W0612: Unused variable 'paliers_new' (unused-variable)
+src\main.py:221:0: R0913: Too many arguments (7/5) (too-many-arguments)
+src\main.py:222:4: W0621: Redefining name 'app' from outer scope (line 956) (redefined-outer-name)
+src\main.py:342:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+src\main.py:341:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+src\main.py:829:12: W0612: Unused variable 'fig_name' (unused-variable)
+src\main.py:859:0: R0914: Too many local variables (16/15) (too-many-locals)
+src\main.py:937:4: W0621: Redefining name 'app' from outer scope (line 956) (redefined-outer-name)
+************* Module src.test_structural_model
+src\test_structural_model.py:31:0: C0301: Line too long (102/100) (line-too-long)
+src\test_structural_model.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\test_structural_model.py:8:0: E0401: Unable to import 'data_processing.fissures_processing' (import-error)
+src\test_structural_model.py:11:0: C0103: Constant name "fissures_path" doesn't conform to UPPER_CASE naming style (invalid-name)
+src\test_structural_model.py:53:0: C0103: Constant name "n" doesn't conform to UPPER_CASE naming style (invalid-name)
+src\test_structural_model.py:3:0: W0611: Unused numpy imported as np (unused-import)
+src\test_structural_model.py:4:0: W0611: Unused pandas imported as pd (unused-import)
+************* Module src.analysis.models
+src\analysis\models.py:479:0: C0301: Line too long (102/100) (line-too-long)
+src\analysis\models.py:605:0: C0301: Line too long (125/100) (line-too-long)
+src\analysis\models.py:610:0: C0301: Line too long (108/100) (line-too-long)
+src\analysis\models.py:1021:0: C0301: Line too long (118/100) (line-too-long)
+src\analysis\models.py:1083:0: C0301: Line too long (108/100) (line-too-long)
+src\analysis\models.py:1118:0: C0301: Line too long (116/100) (line-too-long)
+src\analysis\models.py:1124:0: C0301: Line too long (117/100) (line-too-long)
+src\analysis\models.py:1127:0: C0301: Line too long (121/100) (line-too-long)
+src\analysis\models.py:1248:0: C0301: Line too long (116/100) (line-too-long)
+src\analysis\models.py:1:0: C0302: Too many lines in module (1309/1000) (too-many-lines)
+src\analysis\models.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\analysis\models.py:186:0: R0914: Too many local variables (27/15) (too-many-locals)
+src\analysis\models.py:330:19: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:339:17: R1735: Consider using '{"color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:350:19: R1735: Consider using '{"color": 'green'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:359:17: R1735: Consider using '{"color": 'orange'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:371:19: R1735: Consider using '{"color": 'purple'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:380:17: R1735: Consider using '{"color": 'brown'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:392:19: R1735: Consider using '{"color": 'cyan'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:401:17: R1735: Consider using '{"color": 'magenta'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:413:19: R1735: Consider using '{"color": 'black'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:422:17: R1735: Consider using '{"color": 'gray'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:434:19: R1735: Consider using '{"color": 'yellow'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:443:17: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:451:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:186:0: R0915: Too many statements (52/50) (too-many-statements)
+src\analysis\models.py:470:0: R0914: Too many local variables (19/15) (too-many-locals)
+src\analysis\models.py:503:21: R1735: Consider using '{"color": colors[color_index], "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:517:19: R1735: Consider using '{"color": 'blue', "opacity": 0.5}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:532:19: R1735: Consider using '{"color": 'blue', "opacity": 0.5}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:544:17: R1735: Consider using '{"dash": 'dash', "color": 'grey'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:555:19: R1735: Consider using '{"color": 'red', "opacity": 0.6}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:569:13: R1735: Consider using '{"size": 12, "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:579:13: R1735: Consider using '{"size": 12, "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:587:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:496:8: W0612: Unused variable 'alpha' (unused-variable)
+src\analysis\models.py:603:0: R0914: Too many local variables (33/15) (too-many-locals)
+src\analysis\models.py:634:19: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:643:19: R1735: Consider using '{"color": 'green'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:652:19: R1735: Consider using '{"color": 'purple'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:715:17: R1735: Consider using '{"color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:725:17: R1735: Consider using '{"color": 'orange'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:735:17: R1735: Consider using '{"color": 'brown'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:750:17: R1735: Consider using '{"dash": 'dash', "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:761:19: R1735: Consider using '{"size": 10, "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:773:13: R1735: Consider using '{"color": 'red', "size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:794:21: R1735: Consider using '{"dash": 'dash', "color": color}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:815:23: R1735: Consider using '{"size": 10, "color": color}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:835:17: R1735: Consider using '{"color": color, "size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:841:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:847:15: R1735: Consider using '{"orientation": 'h', "x": 0, "y": -0.2}' instead of a call to 'dict'. (use-dict-literal)
+src\analysis\models.py:741:22: W0612: Unused variable 'r_value' (unused-variable)
+src\analysis\models.py:741:31: W0612: Unused variable 'p_value' (unused-variable)
+src\analysis\models.py:741:40: W0612: Unused variable 'std_err' (unused-variable)
+src\analysis\models.py:888:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\analysis\models.py:907:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\analysis\models.py:921:21: C0103: Argument name "X_train" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:923:4: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+src\analysis\models.py:927:4: C0103: Variable name "X_train_scaled" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:945:4: W1203: Use lazy % formatting in logging functions (logging-fstring-interpolation)
+src\analysis\models.py:927:4: W0612: Unused variable 'X_train_scaled' (unused-variable)
+src\analysis\models.py:950:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\analysis\models.py:950:17: C0103: Argument name "X" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:952:4: C0103: Variable name "X_train" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:952:13: C0103: Variable name "X_test" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:981:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\analysis\models.py:981:0: R0913: Too many arguments (7/5) (too-many-arguments)
+src\analysis\models.py:1041:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\analysis\models.py:1042:42: C0103: Argument name "X_test" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1041:0: R0913: Too many arguments (6/5) (too-many-arguments)
+src\analysis\models.py:1041:0: R0914: Too many local variables (20/15) (too-many-locals)
+src\analysis\models.py:1042:4: W0621: Redefining name 'regression_model' from outer scope (line 921) (redefined-outer-name)
+src\analysis\models.py:1061:8: C0103: Variable name "X_test_scaled" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1066:8: C0103: Variable name "X_test_scaled" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1070:4: C0103: Variable name "X_test_selected" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1072:4: C0103: Variable name "X_test_selected" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1087:4: C0103: Variable name "plotly_FIregression" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1096:4: C0103: Variable name "plotly_FIrf" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1103:4: C0103: Variable name "plotly_FIgb" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1114:0: R0914: Too many local variables (29/15) (too-many-locals)
+src\analysis\models.py:1148:4: C0103: Variable name "A_aile" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1151:4: C0103: Variable name "I_aile" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1154:4: C0103: Variable name "I_central" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1157:4: C0103: Variable name "E_acier" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1195:4: C0103: Variable name "X" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1211:4: C0103: Variable name "X" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1214:4: C0103: Variable name "X_train" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1214:13: C0103: Variable name "X_test" doesn't conform to snake_case naming style (invalid-name)
+src\analysis\models.py:1270:35: E0606: Possibly using variable 'feature_importances' before assignment (possibly-used-before-assignment)
+src\analysis\models.py:1114:0: R0915: Too many statements (58/50) (too-many-statements)
+src\analysis\models.py:18:0: W0611: Unused linear_harvey_collier imported from statsmodels.stats.diagnostic (unused-import)
+************* Module src.analysis.statistical_analysis
+src\analysis\statistical_analysis.py:19:9: W0511: TODO valider le calcul pour LR (fixme)
+src\analysis\statistical_analysis.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\analysis\statistical_analysis.py:15:15: W0612: Unused variable 'intercept' (unused-variable)
+src\analysis\statistical_analysis.py:15:44: W0612: Unused variable 'std_err' (unused-variable)
+************* Module src.data_processing.fissures_processing
+src\data_processing\fissures_processing.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module src.data_processing.meteo_processing
+src\data_processing\meteo_processing.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\data_processing\meteo_processing.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:53:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:65:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:100:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:104:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:112:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:112:0: C0103: Function name "Ps" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:116:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:116:0: C0103: Function name "Pi" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:116:14: C0103: Argument name "RH" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:120:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:120:17: C0103: Argument name "RH" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:121:4: C0103: Variable name "Pi_val" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:122:4: C0103: Variable name "M_v" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:123:4: C0103: Variable name "R" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:124:4: C0103: Variable name "T" doesn't conform to snake_case naming style (invalid-name)
+src\data_processing\meteo_processing.py:128:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:152:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\data_processing\meteo_processing.py:171:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module src.visualization.fissures_visualization
+src\visualization\fissures_visualization.py:26:0: C0301: Line too long (109/100) (line-too-long)
+src\visualization\fissures_visualization.py:212:0: C0301: Line too long (104/100) (line-too-long)
+src\visualization\fissures_visualization.py:814:0: C0301: Line too long (102/100) (line-too-long)
+src\visualization\fissures_visualization.py:835:0: C0301: Line too long (132/100) (line-too-long)
+src\visualization\fissures_visualization.py:892:0: C0301: Line too long (104/100) (line-too-long)
+src\visualization\fissures_visualization.py:903:0: C0301: Line too long (113/100) (line-too-long)
+src\visualization\fissures_visualization.py:937:0: C0301: Line too long (105/100) (line-too-long)
+src\visualization\fissures_visualization.py:948:0: C0301: Line too long (124/100) (line-too-long)
+src\visualization\fissures_visualization.py:954:0: C0301: Line too long (110/100) (line-too-long)
+src\visualization\fissures_visualization.py:958:0: C0301: Line too long (112/100) (line-too-long)
+src\visualization\fissures_visualization.py:960:0: C0301: Line too long (110/100) (line-too-long)
+src\visualization\fissures_visualization.py:1651:0: C0301: Line too long (107/100) (line-too-long)
+src\visualization\fissures_visualization.py:1775:0: C0301: Line too long (115/100) (line-too-long)
+src\visualization\fissures_visualization.py:1994:0: C0301: Line too long (124/100) (line-too-long)
+src\visualization\fissures_visualization.py:2019:0: C0301: Line too long (111/100) (line-too-long)
+src\visualization\fissures_visualization.py:2028:0: C0301: Line too long (115/100) (line-too-long)
+src\visualization\fissures_visualization.py:2077:0: C0301: Line too long (105/100) (line-too-long)
+src\visualization\fissures_visualization.py:2331:0: C0301: Line too long (105/100) (line-too-long)
+src\visualization\fissures_visualization.py:1:0: C0302: Too many lines in module (2382/1000) (too-many-lines)
+src\visualization\fissures_visualization.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\visualization\fissures_visualization.py:5:0: R0402: Use 'from scipy import stats' instead (consider-using-from-import)
+src\visualization\fissures_visualization.py:22:0: E0401: Unable to import 'analysis.models' (import-error)
+src\visualization\fissures_visualization.py:36:17: R1735: Consider using '{"color": 'gray'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:25:35: W0613: Unused argument 'df' (unused-argument)
+src\visualization\fissures_visualization.py:49:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:71:17: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:83:17: R1735: Consider using '{"color": 'green'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:97:13: R1735: Consider using '{"size": 16}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:110:17: R1735: Consider using '{"color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:121:17: R1735: Consider using '{"color": 'orange'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:126:28: R1735: Consider using '{"color": 'gray', "dash": 'dash', "width": 0.5}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:138:13: R1735: Consider using '{"size": 16}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:153:15: R1735: Consider using '{"orientation": 'h', "x": 0, "y": -0.2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:154:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:160:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:170:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:182:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:187:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:187:14: C0103: Argument name "X_log" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:187:0: R1711: Useless return at end of function or method (useless-return)
+src\visualization\fissures_visualization.py:192:4: W0612: Unused variable 's' (unused-variable)
+src\visualization\fissures_visualization.py:231:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:262:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:262:0: R0914: Too many local variables (20/15) (too-many-locals)
+src\visualization\fissures_visualization.py:302:4: C0103: Variable name "X_train" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:302:13: C0103: Variable name "X_val" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:396:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:396:0: R0914: Too many local variables (98/15) (too-many-locals)
+src\visualization\fissures_visualization.py:405:4: C0103: Variable name "X_exp" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:422:4: C0103: Variable name "X_log" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:436:4: C0103: Variable name "X_new_start" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:486:4: C0103: Variable name "X_log_internew" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:492:4: C0103: Variable name "X_old_combined" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:494:4: C0103: Variable name "X_new_combined" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:616:4: C0103: Variable name "IC_Student" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:663:4: C0103: Variable name "X_internew" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:669:4: C0103: Variable name "X_internew_days" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:684:4: C0103: Variable name "X_log_days" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:704:4: C0103: Variable name "final_IC_upper_lin" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:705:4: C0103: Variable name "final_IC_lower_lin" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:730:8: C0103: Argument name "X_internew" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:723:4: R0913: Too many arguments (8/5) (too-many-arguments)
+src\visualization\fissures_visualization.py:875:4: C0103: Function name "IPnew_ratio" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:931:4: C0103: Function name "Prophet_IPnew_ratio" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:396:0: R0915: Too many statements (180/50) (too-many-statements)
+src\visualization\fissures_visualization.py:984:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:996:17: R1735: Consider using '{"dash": 'dash', "color": '#00CC96'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1007:17: R1735: Consider using '{"dash": 'dash', "color": '#00CC96'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1020:17: R1735: Consider using '{"width": 0}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1031:17: R1735: Consider using '{"width": 0}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1043:17: R1735: Consider using '{"color": '#EF553B'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1055:17: R1735: Consider using '{"color": '#00CC96'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1068:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(128, 128, 128, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1079:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(128, 128, 128, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1092:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(128, 128, 128, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1103:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(128, 128, 128, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1115:17: R1735: Consider using '{"dash": 'dash', "color": '#EF553B'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1127:17: R1735: Consider using '{"dash": 'dash', "color": '#EF553B'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1144:19: R1735: Consider using '{"color": 'gray', "size": 5}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1158:17: R1735: Consider using '{"color": 'lightgreen', "width": 5, "dash": 'solid'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1172:17: R1735: Consider using '{"color": 'lightpink', "width": 5, "dash": 'solid'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1186:17: R1735: Consider using '{"color": 'darkblue', "width": 5, "dash": 'solid'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1197:19: R1735: Consider using '{"color": 'blue', "size": 5}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1209:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(0, 102, 204, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1222:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(0, 102, 204, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1232:17: R1735: Consider using '{"dash": 'dash', "color": '#0066CC'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1245:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(0, 102, 204, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1258:17: R1735: Consider using '{"dash": 'dash', "color": 'rgba(0, 102, 204, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1268:17: R1735: Consider using '{"dash": 'dash', "color": '#0066CC'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1328:15: R1735: Consider using '{"font": dict(size=12)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1328:25: R1735: Consider using '{"size": 12}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:985:54: W0613: Unused argument 'y_new_combined' (unused-argument)
+src\visualization\fissures_visualization.py:1336:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:1347:25: R1735: Consider using '{"color": 'gray', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1360:25: R1735: Consider using '{"color": 'blue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1369:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:1387:17: R1735: Consider using '{"color": 'gray', "width": 2, "dash": 'dash'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1402:21: R1735: Consider using '{"color": 'gray', "width": 2, "dash": 'dash'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1417:21: R1735: Consider using '{"color": 'blue', "width": 2, "dash": 'dash'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1427:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:1449:17: R1735: Consider using '{"color": 'blue', "size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1469:17: R1735: Consider using '{"color": 'blue', "size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1478:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:1496:21: R1735: Consider using '{"color": 'gray', "width": 2, "dash": 'solid'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1513:17: R1735: Consider using '{"color": 'blue', "size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1529:21: R1735: Consider using '{"color": 'blue', "width": 2, "dash": 'solid'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1546:17: R1735: Consider using '{"color": 'blue', "size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1555:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\fissures_visualization.py:1555:0: R0914: Too many local variables (25/15) (too-many-locals)
+src\visualization\fissures_visualization.py:1560:8: C0103: Variable name "X_old_combined" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:1562:8: C0103: Variable name "X_new_combined" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:1638:14: R1735: Consider using '{"showgrid": True, "tickformat": '%Y-%m'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1639:14: R1735: Consider using '{"showgrid": True}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1640:13: R1735: Consider using '{"color": 'black', "size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1560:8: W0612: Unused variable 'X_old_combined' (unused-variable)
+src\visualization\fissures_visualization.py:1562:8: W0612: Unused variable 'X_new_combined' (unused-variable)
+src\visualization\fissures_visualization.py:1564:8: W0612: Unused variable 'manual_breaks_old' (unused-variable)
+src\visualization\fissures_visualization.py:1565:8: W0612: Unused variable 'manual_breaks_new' (unused-variable)
+src\visualization\fissures_visualization.py:1567:8: W0612: Unused variable 'paliers_old' (unused-variable)
+src\visualization\fissures_visualization.py:1569:8: W0612: Unused variable 'paliers_new' (unused-variable)
+src\visualization\fissures_visualization.py:1668:4: C0103: Variable name "X_log" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:1676:4: C0103: Variable name "X_new_start" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:1673:4: W0612: Unused variable 'y_log_pred' (unused-variable)
+src\visualization\fissures_visualization.py:1690:0: R0914: Too many local variables (42/15) (too-many-locals)
+src\visualization\fissures_visualization.py:1704:4: W0601: Global variable 'last_upper' undefined at the module level (global-variable-undefined)
+src\visualization\fissures_visualization.py:1704:4: W0601: Global variable 'ecart_last_upper' undefined at the module level (global-variable-undefined)
+src\visualization\fissures_visualization.py:1704:4: W0601: Global variable 'upper_max' undefined at the module level (global-variable-undefined)
+src\visualization\fissures_visualization.py:1735:19: R1735: Consider using '{"color": 'gray', "size": 5}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1746:19: R1735: Consider using '{"color": 'blue', "size": 5}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1806:23: R1735: Consider using '{"color": 'red', "size": 10, "symbol": 'x'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1823:17: R1735: Consider using '{"size": 12, "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1873:23: R1735: Consider using '{"color": upper_color, "size": 10, "symbol": 'triangle-up'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1883:23: R1735: Consider using '{"color": lower_color, "size": 10, "symbol": 'triangle-down'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1901:17: R1735: Consider using '{"size": 12, "color": upper_color}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1916:17: R1735: Consider using '{"size": 12, "color": lower_color}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1962:17: R1735: Consider using '{"size": 12, "color": 'black'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1977:17: R1735: Consider using '{"size": 12, "color": 'black'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1994:14: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+src\visualization\fissures_visualization.py:2000:14: R1735: Consider using '{"range": ['2023-12-03', xaxis_range_end], "showgrid": True, "tickformat": '%Y-%m', ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2006:14: R1735: Consider using '{"range": [3.5, upper_max + 0.25], "showgrid": True}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2010:15: R1735: Consider using '{"orientation": 'h', "x": 0, "y": -0.2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:1690:0: R0915: Too many statements (72/50) (too-many-statements)
+src\visualization\fissures_visualization.py:1691:4: W0613: Unused argument 'df_fissures' (unused-argument)
+src\visualization\fissures_visualization.py:1692:4: W0613: Unused argument 'df_fissures_old' (unused-argument)
+src\visualization\fissures_visualization.py:2017:0: R0914: Too many local variables (19/15) (too-many-locals)
+src\visualization\fissures_visualization.py:2091:0: R0914: Too many local variables (28/15) (too-many-locals)
+src\visualization\fissures_visualization.py:2095:4: C0103: Variable name "X" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:2105:4: C0103: Variable name "X_future" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:2123:17: R1735: Consider using '{"color": 'red', "dash": 'dot'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2144:17: R1735: Consider using '{"color": 'orange', "dash": 'dash'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2154:17: R1735: Consider using '{"color": 'orange', "dash": 'dash'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2184:17: R1735: Consider using '{"color": 'rgba(0, 255, 0, 0)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2197:17: R1735: Consider using '{"color": 'green'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2207:17: R1735: Consider using '{"color": 'green', "dash": 'dot'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2223:0: R0914: Too many local variables (22/15) (too-many-locals)
+src\visualization\fissures_visualization.py:2227:4: C0103: Variable name "X" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:2240:4: C0103: Variable name "X_future" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\fissures_visualization.py:2260:17: R1735: Consider using '{"color": 'purple', "dash": 'dot'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2290:17: R1735: Consider using '{"color": 'rgba(128, 0, 128, 0)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2303:17: R1735: Consider using '{"color": 'purple'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2313:17: R1735: Consider using '{"color": 'purple', "dash": 'dot'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2356:17: R1735: Consider using '{"color": 'blue', "dash": 'dot'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:2368:17: R1735: Consider using '{"color": 'rgba(0, 100, 250, 0)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\fissures_visualization.py:6:0: W0611: Unused seaborn imported as sns (unused-import)
+src\visualization\fissures_visualization.py:9:0: W0611: Unused Parallel imported from joblib (unused-import)
+src\visualization\fissures_visualization.py:9:0: W0611: Unused delayed imported from joblib (unused-import)
+src\visualization\fissures_visualization.py:12:0: W0611: Unused interp1d imported from scipy.interpolate (unused-import)
+src\visualization\fissures_visualization.py:13:0: W0611: Unused curve_fit imported from scipy.optimize (unused-import)
+src\visualization\fissures_visualization.py:13:0: W0611: Unused minimize imported from scipy.optimize (unused-import)
+src\visualization\fissures_visualization.py:14:0: W0611: Unused linregress imported from scipy.stats (unused-import)
+src\visualization\fissures_visualization.py:18:0: W0611: Unused OLS imported from statsmodels.api (unused-import)
+src\visualization\fissures_visualization.py:18:0: W0611: Unused add_constant imported from statsmodels.api (unused-import)
+src\visualization\fissures_visualization.py:20:0: W0611: Unused SARIMAX imported from statsmodels.tsa.statespace.sarimax (unused-import)
+************* Module src.visualization.meteo_visualization
+src\visualization\meteo_visualization.py:854:0: C0301: Line too long (147/100) (line-too-long)
+src\visualization\meteo_visualization.py:855:0: C0301: Line too long (105/100) (line-too-long)
+src\visualization\meteo_visualization.py:857:0: C0301: Line too long (143/100) (line-too-long)
+src\visualization\meteo_visualization.py:858:0: C0301: Line too long (110/100) (line-too-long)
+src\visualization\meteo_visualization.py:1:0: C0302: Too many lines in module (1200/1000) (too-many-lines)
+src\visualization\meteo_visualization.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\visualization\meteo_visualization.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:36:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:40:26: R1735: Consider using '{"size": 18}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:41:15: R1735: Consider using '{"font": dict(size=10)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:41:25: R1735: Consider using '{"size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:45:29: R1735: Consider using '{"size": 4}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:50:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:60:17: R1735: Consider using '{"color": 'blue', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:72:17: R1735: Consider using '{"color": 'blue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:83:17: R1735: Consider using '{"color": 'green', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:95:17: R1735: Consider using '{"color": 'green', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:108:17: R1735: Consider using '{"color": 'lightblue', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:120:17: R1735: Consider using '{"color": 'lightblue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:131:17: R1735: Consider using '{"color": 'orange', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:143:17: R1735: Consider using '{"color": 'orange', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:154:17: R1735: Consider using '{"color": 'darkblue', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:166:17: R1735: Consider using '{"color": 'darkblue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:179:17: R1735: Consider using '{"color": 'lightgreen', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:191:17: R1735: Consider using '{"color": 'lightgreen', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:202:17: R1735: Consider using '{"color": 'red', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:214:17: R1735: Consider using '{"color": 'red', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:225:17: R1735: Consider using '{"color": 'darkgreen', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:237:17: R1735: Consider using '{"color": 'darkgreen', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:248:15: R1735: Consider using '{"font": dict(size=10)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:248:25: R1735: Consider using '{"size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:249:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:260:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:269:17: R1735: Consider using '{"color": 'blue', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:279:17: R1735: Consider using '{"color": 'blue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:288:17: R1735: Consider using '{"color": 'green', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:298:17: R1735: Consider using '{"color": 'green', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:307:17: R1735: Consider using '{"color": 'purple', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:317:17: R1735: Consider using '{"color": 'purple', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:326:17: R1735: Consider using '{"color": 'orange', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:336:17: R1735: Consider using '{"color": 'orange', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:344:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:345:15: R1735: Consider using '{"font": dict(size=10)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:345:25: R1735: Consider using '{"size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:354:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:364:17: R1735: Consider using '{"width": 1, "color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:376:17: R1735: Consider using '{"width": 2, "color": 'darkblue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:382:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:386:15: R1735: Consider using '{"font": dict(size=10)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:386:25: R1735: Consider using '{"size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:393:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:393:0: R0914: Too many local variables (47/15) (too-many-locals)
+src\visualization\meteo_visualization.py:402:17: R1735: Consider using '{"color": 'red', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:412:17: R1735: Consider using '{"color": 'red', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:419:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:422:15: R1735: Consider using '{"font": dict(size=10)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:422:25: R1735: Consider using '{"size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:532:19: R1735: Consider using '{"color": df_cleaned['Wind speed(km/h)'], "colorscale": 'thermal'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:550:25: R1735: Consider using '{"title": dict(text='Wind Speed (km/h)', side='right', font=dict(size=18)), ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:551:26: R1735: Consider using '{"text": 'Wind Speed (km/h)', "side": 'right', "font": dict(size=18), ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:552:69: R1735: Consider using '{"size": 18}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:582:4: C0103: Variable name "R" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\meteo_visualization.py:630:4: C0103: Variable name "R_weighted" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\meteo_visualization.py:690:21: R1735: Consider using '{"color": color, "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:703:17: R1735: Consider using '{"color": 'red', "width": 4}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:717:17: R1735: Consider using '{"color": 'rgba(255, 192, 203, 0.5)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:730:17: R1735: Consider using '{"color": 'mediumblue', "width": 6}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:746:17: R1735: Consider using '{"color": 'rgba(70, 130, 180, 0.3)'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:772:21: R1735: Consider using '{"size": 12, "color": 'black'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:781:14: R1735: Consider using '{"text": 'Visualisation radiale de la direction et de la vitesse du vent', ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:783:17: R1735: Consider using '{"size": 26}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:787:14: R1735: Consider using '{"domain": dict(x=[0, 1], y=[0, 0.95]), "radialaxis": dict(range=[0, np.log1p(df_cleaned['Wind speed(km/h)'].max())], tickvals=np.log1p([1, 2, 5, 10, 20, 50]), ticktext=[' 1', ' 2', ' 5', ' 10', ' 20', ' 50'], showline=True, linewidth=1.5, tickangle=45, tickfont=dict(size=14, color='blue'), gridcolor='blue', gridwidth=0.7), ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:788:19: R1735: Consider using '{"x": [0, 1], "y": [0, 0.95]}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:789:23: R1735: Consider using '{"range": [0, np.log1p(df_cleaned['Wind speed(km/h)'].max())], "tickvals": np.log1p([1, 2, 5, 10, 20, 50]), ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:808:25: R1735: Consider using '{"size": 14, "color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:814:24: R1735: Consider using '{"tickvals": [0, 45, 90, 135, 180, 225, 270, 315], "ticktext": ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'], ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:828:25: R1735: Consider using '{"size": 20, "color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:835:15: R1735: Consider using '{"l": 0, "r": 20, "b": 0, "t": 35}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:836:15: R1735: Consider using '{"font": dict(size=12), "orientation": 'h', "yanchor": 'bottom', "y": -0.3, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:837:17: R1735: Consider using '{"size": 12}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:862:13: R1735: Consider using '{"size": 16}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:393:0: R0915: Too many statements (68/50) (too-many-statements)
+src\visualization\meteo_visualization.py:868:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:878:17: R1735: Consider using '{"color": 'blue', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:890:17: R1735: Consider using '{"color": 'blue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:903:17: R1735: Consider using '{"color": 'green', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:915:17: R1735: Consider using '{"color": 'green', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:935:17: R1735: Consider using '{"color": 'red', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:947:17: R1735: Consider using '{"color": 'red', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:955:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:969:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:979:17: R1735: Consider using '{"color": 'blue', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:989:17: R1735: Consider using '{"color": 'blue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:998:17: R1735: Consider using '{"color": 'green', "width": 1}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1008:17: R1735: Consider using '{"color": 'green', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1014:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1017:15: R1735: Consider using '{"font": dict(size=10)}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1017:25: R1735: Consider using '{"size": 10}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1026:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:1070:29: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1085:29: R1735: Consider using '{"dash": 'dash', "color": 'orange'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1097:29: R1735: Consider using '{"dash": 'dash', "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1108:17: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:1122:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:1154:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\meteo_visualization.py:1184:27: R1735: Consider using '{"size": 3, "opacity": 0.6, "color": color}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\meteo_visualization.py:6:0: W0611: Unused sem imported from scipy.stats (unused-import)
+src\visualization\meteo_visualization.py:6:0: W0611: Unused t imported from scipy.stats (unused-import)
+************* Module src.visualization.structure_visualization
+src\visualization\structure_visualization.py:253:0: C0301: Line too long (106/100) (line-too-long)
+src\visualization\structure_visualization.py:430:0: C0301: Line too long (106/100) (line-too-long)
+src\visualization\structure_visualization.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+src\visualization\structure_visualization.py:6:0: R0402: Use 'from matplotlib import patches' instead (consider-using-from-import)
+src\visualization\structure_visualization.py:14:0: E0401: Unable to import 'data_processing.fissures_processing' (import-error)
+src\visualization\structure_visualization.py:15:0: E0401: Unable to import 'visualization.fissures_visualization' (import-error)
+src\visualization\structure_visualization.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\structure_visualization.py:19:4: R0914: Too many local variables (16/15) (too-many-locals)
+src\visualization\structure_visualization.py:33:8: C0103: Variable name "I_aile" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:35:8: C0103: Variable name "I_central" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:36:8: C0103: Variable name "IPN_Moment_Inertia" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:38:8: C0103: Variable name "E_acier" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:39:8: C0103: Variable name "IPN_Rigidite_Flexion" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:40:8: C0103: Variable name "IPN_Section" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:41:8: C0103: Variable name "IPN_Stress_Factor" doesn't conform to snake_case naming style (invalid-name)
+src\visualization\structure_visualization.py:89:0: C0116: Missing function or method docstring (missing-function-docstring)
+src\visualization\structure_visualization.py:89:0: R0914: Too many local variables (74/15) (too-many-locals)
+src\visualization\structure_visualization.py:571:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:594:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:623:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:642:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:658:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:680:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": 0.5, "headwidth": 4, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:693:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:709:19: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:725:19: R1735: Consider using '{"facecolor": 'blue', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:742:19: R1735: Consider using '{"facecolor": 'blue', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:89:0: R0915: Too many statements (141/50) (too-many-statements)
+src\visualization\structure_visualization.py:96:4: W0612: Unused variable 'epaisseur_murs' (unused-variable)
+src\visualization\structure_visualization.py:103:4: W0612: Unused variable 'epaisseur_acrotere' (unused-variable)
+src\visualization\structure_visualization.py:112:4: W0612: Unused variable 'porte_a_faux' (unused-variable)
+src\visualization\structure_visualization.py:118:4: W0612: Unused variable 'epaisseur_ipn_centrale' (unused-variable)
+src\visualization\structure_visualization.py:818:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:844:17: R1735: Consider using '{"color": 'blue', "width": 2}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:861:19: R1735: Consider using '{"color": 'green', "size": 8}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:871:14: R1735: Consider using '{"title": 'Valeur moyenne (en mm)', "titlefont": dict(color='blue'), ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:873:22: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:874:21: R1735: Consider using '{"color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:876:15: R1735: Consider using '{"title": 'Durée (en jours)', "titlefont": dict(color='green'), "tickfont": dict(color='green'), ... }' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:878:22: R1735: Consider using '{"color": 'green'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:879:21: R1735: Consider using '{"color": 'green'}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:884:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+src\visualization\structure_visualization.py:890:0: R0914: Too many local variables (16/15) (too-many-locals)
+src\visualization\structure_visualization.py:958:13: R1735: Consider using '{"size": 20}' instead of a call to 'dict'. (use-dict-literal)
+************* Module scripts.fissures
+scripts\fissures.py:278:0: C0301: Line too long (102/100) (line-too-long)
+scripts\fissures.py:347:0: C0301: Line too long (108/100) (line-too-long)
+scripts\fissures.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+scripts\fissures.py:41:15: W0612: Unused variable 'intercept' (unused-variable)
+scripts\fissures.py:41:44: W0612: Unused variable 'std_err' (unused-variable)
+scripts\fissures.py:169:0: R0914: Too many local variables (16/15) (too-many-locals)
+scripts\fissures.py:269:0: R0914: Too many local variables (21/15) (too-many-locals)
+scripts\fissures.py:281:13: E1101: Module 'matplotlib.cm' has no 'coolwarm' member (no-member)
+scripts\fissures.py:340:0: R0914: Too many local variables (18/15) (too-many-locals)
+scripts\fissures.py:340:42: W0613: Unused argument 'regression_results_df' (unused-argument)
+scripts\fissures.py:383:22: W0612: Unused variable 'r_value' (unused-variable)
+scripts\fissures.py:383:31: W0612: Unused variable 'p_value' (unused-variable)
+scripts\fissures.py:383:40: W0612: Unused variable 'std_err' (unused-variable)
+scripts\fissures.py:430:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\fissures.py:440:4: W0612: Unused variable 'fig1' (unused-variable)
+scripts\fissures.py:440:10: W0612: Unused variable 'fig2' (unused-variable)
+************* Module scripts.meteo
+scripts\meteo.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+scripts\meteo.py:8:0: C0103: Constant name "file1" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\meteo.py:9:0: C0103: Constant name "file2" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\meteo.py:10:0: C0103: Constant name "direct" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\meteo.py:11:0: C0103: Constant name "path1" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\meteo.py:12:0: C0103: Constant name "path2" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\meteo.py:62:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\meteo.py:72:0: C0103: Constant name "window_size" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\meteo.py:409:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\meteo.py:409:27: W0621: Redefining name 'df_cleaned' from outer scope (line 27) (redefined-outer-name)
+scripts\meteo.py:409:39: W0621: Redefining name 'variable_base_names' from outer scope (line 478) (redefined-outer-name)
+scripts\meteo.py:423:8: W0621: Redefining name 'fig' from outer scope (line 324) (redefined-outer-name)
+scripts\meteo.py:423:14: W0621: Redefining name 'ax1' from outer scope (line 324) (redefined-outer-name)
+scripts\meteo.py:423:19: W0621: Redefining name 'ax2' from outer scope (line 345) (redefined-outer-name)
+scripts\meteo.py:494:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\meteo.py:494:30: W0621: Redefining name 'df_cleaned' from outer scope (line 27) (redefined-outer-name)
+scripts\meteo.py:494:42: W0621: Redefining name 'variable_base_names' from outer scope (line 478) (redefined-outer-name)
+scripts\meteo.py:508:4: W0621: Redefining name 'df_stats' from outer scope (line 513) (redefined-outer-name)
+************* Module scripts.plan
+scripts\plan.py:165:0: C0301: Line too long (102/100) (line-too-long)
+scripts\plan.py:293:0: C0301: Line too long (118/100) (line-too-long)
+scripts\plan.py:335:0: C0301: Line too long (102/100) (line-too-long)
+scripts\plan.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+scripts\plan.py:1:0: R0402: Use 'from matplotlib import patches' instead (consider-using-from-import)
+scripts\plan.py:5:0: C0103: Constant name "longueur_batiment" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:6:0: C0103: Constant name "largeur_batiment" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:7:0: C0103: Constant name "hauteur_batiment" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:8:0: C0103: Constant name "epaisseur_murs" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:11:0: C0103: Constant name "epaisseur_dalle_toit" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:12:0: C0103: Constant name "epaisseur_isolation_toit" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:13:0: C0103: Constant name "epaisseur_gravier" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:14:0: C0103: Constant name "hauteur_acrotere" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:15:0: C0103: Constant name "epaisseur_acrotere" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:16:0: C0103: Constant name "epaisseur_toit_total" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:21:0: C0103: Constant name "longueur_poutre" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:22:0: C0103: Constant name "hauteur_poutre" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:23:0: C0103: Constant name "largeur_poutre" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:24:0: C0103: Constant name "porte_a_faux" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:25:0: C0103: Constant name "appui_colline" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:28:0: C0103: Constant name "hauteur_ipn" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:29:0: C0103: Constant name "largeur_ipn" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:30:0: C0103: Constant name "epaisseur_ipn_centrale" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:33:0: C0103: Constant name "taille_socle" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:36:0: C0103: Constant name "hauteur_mur_sout" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:37:0: C0103: Constant name "epaisseur_mur_sout" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:176:0: C0103: Constant name "espacement_ipn" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:382:0: C0103: Constant name "width" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:383:0: C0103: Constant name "headwidth" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:384:0: C0103: Constant name "headlength" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\plan.py:403:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:426:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:455:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:471:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:487:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:506:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": 0.5, "headwidth": 4, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:518:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:534:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:550:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\plan.py:567:15: R1735: Consider using '{"facecolor": 'black', "shrink": 0.05, "width": width, "headwidth": headwidth, ... }' instead of a call to 'dict'. (use-dict-literal)
+************* Module scripts.structure
+scripts\structure.py:225:0: C0301: Line too long (111/100) (line-too-long)
+scripts\structure.py:312:0: C0301: Line too long (116/100) (line-too-long)
+scripts\structure.py:338:0: C0301: Line too long (102/100) (line-too-long)
+scripts\structure.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+scripts\structure.py:11:23: W0621: Redefining name 'chemin' from outer scope (line 215) (redefined-outer-name)
+scripts\structure.py:32:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\structure.py:32:0: R0914: Too many local variables (26/15) (too-many-locals)
+scripts\structure.py:32:26: W0621: Redefining name 'df_fissures' from outer scope (line 216) (redefined-outer-name)
+scripts\structure.py:32:39: W0621: Redefining name 'df_fissures_old' from outer scope (line 216) (redefined-outer-name)
+scripts\structure.py:146:4: W0621: Redefining name 'df_paliers_old' from outer scope (line 217) (redefined-outer-name)
+scripts\structure.py:149:4: W0621: Redefining name 'df_paliers_new' from outer scope (line 217) (redefined-outer-name)
+scripts\structure.py:38:4: C0103: Variable name "X_old_filtered" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:45:4: C0103: Variable name "X_new_start" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:156:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\structure.py:156:0: R0914: Too many local variables (16/15) (too-many-locals)
+scripts\structure.py:156:22: W0621: Redefining name 'df_paliers_old' from outer scope (line 217) (redefined-outer-name)
+scripts\structure.py:156:38: W0621: Redefining name 'df_paliers_new' from outer scope (line 217) (redefined-outer-name)
+scripts\structure.py:157:4: W0621: Redefining name 'df_paliers_combined' from outer scope (line 218) (redefined-outer-name)
+scripts\structure.py:170:4: C0103: Variable name "I_aile" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:172:4: C0103: Variable name "I_central" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:173:4: C0103: Variable name "IPN_Moment_Inertia" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:175:4: C0103: Variable name "E_acier" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:176:4: C0103: Variable name "IPN_Rigidite_Flexion" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:177:4: C0103: Variable name "IPN_Section" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:178:4: C0103: Variable name "IPN_Stress_Factor" doesn't conform to snake_case naming style (invalid-name)
+scripts\structure.py:215:0: C0103: Constant name "chemin" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\structure.py:224:32: W0621: Redefining name 'df_paliers_combined' from outer scope (line 218) (redefined-outer-name)
+scripts\structure.py:227:4: W0612: Unused variable 'fig' (unused-variable)
+scripts\structure.py:275:31: W0621: Redefining name 'df_paliers_combined' from outer scope (line 218) (redefined-outer-name)
+scripts\structure.py:296:4: W0612: Unused variable 'fig' (unused-variable)
+scripts\structure.py:311:0: R0914: Too many local variables (20/15) (too-many-locals)
+scripts\structure.py:311:35: W0621: Redefining name 'df_paliers_combined' from outer scope (line 218) (redefined-outer-name)
+scripts\structure.py:384:19: W0631: Using possibly undefined loop variable 'i' (undefined-loop-variable)
+************* Module scripts.test
+scripts\test.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+scripts\test.py:8:0: C0103: Constant name "file_old" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\test.py:9:0: C0103: Constant name "file_new" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\test.py:46:0: C0103: Constant name "scaling_factor" doesn't conform to UPPER_CASE naming style (invalid-name)
+scripts\test.py:129:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\test.py:131:8: W0621: Redefining name 'i' from outer scope (line 155) (redefined-outer-name)
+scripts\test.py:140:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\test.py:142:8: W0621: Redefining name 'i' from outer scope (line 155) (redefined-outer-name)
+scripts\test.py:208:0: C0116: Missing function or method docstring (missing-function-docstring)
+scripts\test.py:297:13: R1735: Consider using '{"boxstyle": 'round,pad=0.3', "edgecolor": 'blue', "facecolor": 'lightblue', ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:301:19: R1735: Consider using '{"arrowstyle": '-|>', "color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:317:13: R1735: Consider using '{"boxstyle": 'round,pad=0.3', "edgecolor": 'red', "facecolor": 'lightcoral', ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:321:19: R1735: Consider using '{"arrowstyle": '-|>', "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:351:13: R1735: Consider using '{"boxstyle": 'round,pad=0.3', "edgecolor": 'blue', "facecolor": 'lightblue', ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:354:19: R1735: Consider using '{"arrowstyle": '-|>', "color": 'blue'}' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:383:13: R1735: Consider using '{"boxstyle": 'round,pad=0.3', "edgecolor": 'red', "facecolor": 'lightcoral', ... }' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:386:19: R1735: Consider using '{"arrowstyle": '-|>', "color": 'red'}' instead of a call to 'dict'. (use-dict-literal)
+scripts\test.py:1:0: W0611: Unused matplotlib.dates imported as mdates (unused-import)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[4:267]
+==src.visualization.structure_visualization:[92:354]
+    longueur_batiment = 15
+    largeur_batiment = 7.5
+    hauteur_batiment = 2.7
+    epaisseur_murs = 0.15
+
+    # Toit terrasse
+    epaisseur_dalle_toit = 0.15
+    epaisseur_isolation_toit = 0.12
+    epaisseur_gravier = 0.10
+    hauteur_acrotere = 0.50
+    epaisseur_acrotere = 0.20
+    epaisseur_toit_total = (
+        epaisseur_dalle_toit + epaisseur_isolation_toit + epaisseur_gravier
+    )
+
+    # Fondations et structure sous le bâtiment
+    longueur_poutre = 7.5
+    hauteur_poutre = 0.30
+    largeur_poutre = 0.30
+    porte_a_faux = 2.8
+    appui_colline = 4.7
+
+    # IPN
+    hauteur_ipn = 2.4
+    largeur_ipn = 0.20
+    epaisseur_ipn_centrale = 0.30
+
+    # Socles en béton
+    taille_socle = 1
+
+    # Mur de soutènement
+    hauteur_mur_sout = 2.4
+    epaisseur_mur_sout = 0.35
+
+    # Création de la figure et des axes
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 4))
+
+    # Fixer les limites des axes pour correspondre exactement
+    ax1.set_xlim(-1, 16)  # Pour la vue de face
+    ax2.set_xlim(-1, 16)  # Pour la vue de côté
+    ax1.set_ylim(-1.5, 6)  # Pour la vue de face
+    ax2.set_ylim(-1.5, 6)  # Pour la vue de côté
+
+    # S'assurer que les deux axes ont le même aspect ratio
+    ax1.set_aspect("equal")
+    ax2.set_aspect("equal")
+
+    # Vue de face
+    ax1.set_title("Vue de face du bâtiment")
+
+    # Colline (vue de côté)
+    colline = patches.Polygon(
+        [(-1, hauteur_mur_sout + 1.2), (16, hauteur_mur_sout + 1.2), (16, 0), (-1, 0)],
+        closed=True,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="green",
+    )
+    ax1.add_patch(colline)
+
+    # Espace
+    espace = patches.Rectangle(
+        (0, hauteur_mur_sout),
+        longueur_batiment,
+        hauteur_mur_sout + hauteur_poutre,
+        linewidth=1,
+        edgecolor=None,
+        facecolor="white",
+    )
+    ax1.add_patch(espace)
+
+    # Mur de soutènement
+    mur_sout = patches.Rectangle(
+        (0, 0),
+        longueur_batiment,
+        hauteur_mur_sout,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="gray",
+    )
+    ax1.add_patch(mur_sout)
+
+    # Murs du bâtiment
+    batiment = patches.Rectangle(
+        (0, hauteur_mur_sout + hauteur_poutre),
+        longueur_batiment,
+        hauteur_batiment,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="lightgray",
+    )
+    ax1.add_patch(batiment)
+
+    # Dalle de sol (vue de face) - 15 cm d'épaisseur, placée au-dessus des poutres
+    dalle_sol_face = patches.Rectangle(
+        (0, hauteur_mur_sout + largeur_poutre),
+        longueur_batiment,
+        0.15,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax1.add_patch(dalle_sol_face)
+
+    # Acrotère complet (vue de face)
+    acrotere_face = patches.Rectangle(
+        (
+            -0.7,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit
+            + epaisseur_gravier
+            - 0.20,
+        ),
+        longueur_batiment + 1.4,
+        0.50,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax1.add_patch(acrotere_face)
+
+    # Couches du toit (vue de face) - correcte alignement des dimensions
+    dalle_beton = patches.Rectangle(
+        (0, hauteur_mur_sout + hauteur_batiment),
+        longueur_batiment,
+        epaisseur_dalle_toit,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax1.add_patch(dalle_beton)
+
+    isolation = patches.Rectangle(
+        (0, hauteur_mur_sout + hauteur_batiment + epaisseur_dalle_toit),
+        longueur_batiment,
+        epaisseur_isolation_toit,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="lightgray",
+    )
+    ax1.add_patch(isolation)
+
+    gravier = patches.Rectangle(
+        (
+            0,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit,
+        ),
+        longueur_batiment,
+        epaisseur_gravier,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="gray",
+    )
+    ax1.add_patch(gravier)
+
+    # Remblai (vue de face) - sous le mur de soutènement et entourant les socles des IPN, sans les masquer
+    remblai = patches.Polygon(
+        [(-1, 0), (16, 0), (16, -1.5), (-1, -1.5)],
+        closed=True,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="yellow",
+    )
+    ax1.add_patch(remblai)
+
+    # IPN sous les poutres - 5 IPN espacés correctement
+    espacement_ipn = 3.6  # Espacement des IPN
+    for i in range(5):  # Cinq IPN, espacés de 3.6m
+        x_ipn = 0.30 + i * espacement_ipn  # IPN commence à 30 cm du bord
+        ipn = patches.Rectangle(
+            (x_ipn - largeur_ipn / 2, 0),
+            largeur_ipn,
+            hauteur_ipn,
+            linewidth=1,
+            edgecolor="black",
+            facecolor="blue",
+        )
+        ax1.add_patch(ipn)
+
+        # Aligner les poutres sur les IPN
+        poutre = patches.Rectangle(
+            (x_ipn - largeur_poutre / 2, hauteur_mur_sout),
+            largeur_poutre,
+            hauteur_poutre,
+            linewidth=1,
+            edgecolor="black",
+            facecolor="gray",
+        )
+        ax1.add_patch(poutre)
+
+        # Ajouter le socle en béton sous l'IPN
+        socle = patches.Rectangle(
+            (x_ipn - taille_socle / 2, -taille_socle),
+            taille_socle,
+            taille_socle,
+            linewidth=1,
+            edgecolor="black",
+            facecolor="darkgray",
+        )
+        ax1.add_patch(socle)
+
+    # Vue de côté
+    ax2.set_title("Vue de côté du bâtiment")
+
+    # Mur de soutènement (côté) - Positionné à 4,7 m de l'autre extrémité des poutres
+    mur_sout_cote = patches.Rectangle(
+        (appui_colline, 0),
+        epaisseur_mur_sout,
+        hauteur_mur_sout,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="gray",
+    )
+    ax2.add_patch(mur_sout_cote)
+
+    # Bâtiment (vue côté)
+    batiment_cote = patches.Rectangle(
+        (epaisseur_mur_sout, hauteur_mur_sout + largeur_poutre),
+        largeur_batiment,
+        hauteur_batiment,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="lightgray",
+    )
+    ax2.add_patch(batiment_cote)
+
+    # Acrotère complet (vue de côté)
+    acrotere_cote = patches.Rectangle(
+        (
+            epaisseur_mur_sout - 0.7,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit
+            + epaisseur_gravier
+            - 0.20,
+        ),
+        largeur_batiment + 1.4,
+        0.50,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax2.add_patch(acrotere_cote)
+
+    # Couches du toit (vue de côté) - correct alignement des dimensions
+    dalle_beton_cote = patches.Rectangle(
+        (epaisseur_mur_sout, hauteur_mur_sout + hauteur_batiment),
+        largeur_batiment,
+        epaisseur_dalle_toit,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax2.add_patch(dalle_beton_cote)
+
+    isolation_cote = patches.Rectangle( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[358:433]
+==src.visualization.structure_visualization:[526:601]
+    ax2.text(
+        (appui_colline / 2) - 1,
+        hauteur_mur_sout / 2 - 1,
+        "Colline",
+        ha="center",
+        va="center",
+        fontsize=12,
+        color="white",
+    )
+
+    # Remblai (milieu du polygone)
+    ax2.text(
+        (appui_colline + 7.0) / 2 + 3,
+        -taille_socle / 2 + 0.2,
+        "Remblai",
+        ha="center",
+        va="center",
+        fontsize=12,
+        color="black",
+    )
+
+    # Annotations avec flèches pour les autres éléments
+
+    width = 0.5
+    headwidth = 4
+    headlength = 6
+
+    # Acrotère
+    ax2.annotate(
+        "Acrotère",
+        xy=(
+            8.5,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_toit_total
+            + hauteur_acrotere / 2,
+        ),
+        xytext=(
+            13,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_toit_total
+            + hauteur_acrotere / 2,
+        ),
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Gravier
+    ax2.annotate(
+        "Gravier",
+        xy=(
+            8,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit
+            + epaisseur_gravier / 2,
+        ),
+        xytext=(13, hauteur_mur_sout + hauteur_batiment + epaisseur_gravier / 2 + 0.2),
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[156:196]
+==src.visualization.structure_visualization:[19:59]
+    df_paliers_combined = pd.concat([df_paliers_old, df_paliers_new])
+
+    # Ajout des colonnes supplémentaires pour l'analyse structurelle
+    construction_year = 1959
+    df_paliers_combined["Building_Age"] = (
+        df_paliers_combined["Début"].dt.year - construction_year
+    )
+    df_paliers_combined["Building_Age"] = df_paliers_combined["Building_Age"].apply(
+        lambda x: max(x, 1)
+    )
+
+    # Les propriétés IPN sont constantes, nous les stockons dans des variables séparées
+    b_aile, h_aile, d_aile = 0.15, 0.01, 0.15
+    I_aile = 2 * ((b_aile * h_aile**3) / 12 + (b_aile * h_aile) * d_aile**2)
+    b_central, h_central = 0.30, 0.015
+    I_central = (b_central * h_central**3) / 12
+    IPN_Moment_Inertia = I_aile + I_central
+
+    E_acier = 210 * 10**9
+    IPN_Rigidite_Flexion = E_acier * IPN_Moment_Inertia
+    IPN_Section = b_aile * h_aile + b_central * h_central
+    IPN_Stress_Factor = 1 / IPN_Section
+
+    # Les autres colonnes variables
+    df_paliers_combined["IPN_Age"] = df_paliers_combined["Début"].dt.year - 2016
+    df_paliers_combined["IPN_Age"] = df_paliers_combined["IPN_Age"].apply(
+        lambda x: max(x, 0)
+    )
+    df_paliers_combined["Tassement_Differentiel_IPN"] = np.log1p(
+        df_paliers_combined["IPN_Age"]
+    )
+    df_paliers_combined["Tassement_Mur"] = (
+        np.log1p(df_paliers_combined["Building_Age"]) * 0.5
+    )
+    df_paliers_combined["Tassement_Colline"] = (
+        np.log1p(df_paliers_combined["Building_Age"]) * 0.1
+    )
+    df_paliers_combined["Corrosion_Index"] = np.log1p(
+        df_paliers_combined["Building_Age"]
+    ) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.fissures:[33:80]
+==src.analysis.statistical_analysis:[9:42]
+    results = []
+    for i in range(2, len(df) + 1):
+        subset = df.iloc[:i]
+        mk_result = mk.original_test(subset["Bureau"])
+        spearman_corr, spearman_p = spearmanr(subset["Days"], subset["Bureau"])
+        slope, intercept, r_value, p_value, std_err = linregress(
+            subset["Days"], subset["Bureau"]
+        )
+
+        # TODO valider le calcul pour LR
+        results.append(
+            {
+                "p-value MK": round(mk_result.p, 2),
+                "Corr. Sp.": round(spearman_corr, 2),
+                "p-value Sp.": round(spearman_p, 2),
+                "Slope LR": round(slope, 3),
+                "Corr. LR": round(r_value, 2),
+                "p-value LR": round(p_value, 2),
+                "Trend MK": "Croiss." if mk_result.trend == "increasing" else "Décr.",
+                "MK": "Sign.  " if mk_result.p < 0.05 else "N. Sign.  ",
+                "Spearman": "Croiss. Sign.  " if spearman_p < 0.05 else "N. Sign.  ",
+                "LR": (
+                    "Croiss. Sign."
+                    if p_value < 0.05 and slope > 0
+                    else "Décr. Sign." if p_value < 0.05 and slope < 0 else "N. Sign."
+                ),
+            }
+        )
+    results_df = pd.DataFrame(results)
+    results_df.index = np.arange(1, len(results) + 1)
+    display(results_df.iloc[:, :6])
+    print("")
+    display(results_df.iloc[:, 6:]) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[470:500]
+==src.visualization.structure_visualization:[641:671]
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="bottom",
+)
+
+# Mur du bâtiment
+ax2.annotate(
+    "Mur bâtiment",
+    xy=(8, hauteur_mur_sout + hauteur_batiment / 2),
+    xytext=(13, hauteur_mur_sout + hauteur_batiment / 2),
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="center",
+)
+
+# Dalle de sol (avec flèche)
+ax2.annotate(
+    "Dalle de sol", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.test:[70:98]
+==src.visualization.fissures_visualization:[491:521]
+    X_old_combined = (df_combined_old.index - df_combined_old.index.min()).days.values
+    y_old_combined = df_combined_old["Bureau"].values
+    X_new_combined = (df_combined_new.index - df_combined_new.index.min()).days.values
+    y_new_combined = df_combined_new["Bureau"].values
+
+    # Paliers et segments
+
+    # Points de rupture pour la première phase avec 16 segments
+    manual_breaks_old_dates = [
+        "2010-12-01",
+        "2012-06-01",
+        "2013-04-01",
+        "2013-06-01",
+        "2014-04-01",
+        "2014-06-01",
+        "2015-03-01",
+        "2015-10-01",
+        "2016-03-01",
+        "2016-09-01",
+        "2016-12-10",
+        "2017-07-01",
+        "2018-03-15",
+        "2018-04-15",
+        "2019-02-01",
+        "2019-07-01",
+        "2020-09-01",
+    ]
+    manual_breaks_old = [
+        df_combined_old.index.get_loc(
+            df_combined_old.index[ (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[183:205]
+==src.analysis.models:[1170:1194]
+    )
+    df_paliers_combined["Tassement_Differentiel_IPN"] = np.log1p(
+        df_paliers_combined["IPN_Age"]
+    )
+    df_paliers_combined["Tassement_Mur"] = (
+        np.log1p(df_paliers_combined["Building_Age"]) * 0.5
+    )
+    df_paliers_combined["Tassement_Colline"] = (
+        np.log1p(df_paliers_combined["Building_Age"]) * 0.1
+    )
+
+    ### Variables explicatives existantes ###
+    df_paliers_combined["Corrosion_Index"] = np.log1p(
+        df_paliers_combined["Building_Age"]
+    )
+    df_paliers_combined["Fatigue_Factor"] = np.sqrt(df_paliers_combined["Building_Age"])
+    df_paliers_combined["Degradation_Factor"] = np.exp(
+        -0.01 * df_paliers_combined["Building_Age"]
+    )
+    df_paliers_combined["Palier_Duration"] = (
+        df_paliers_combined["Fin"] - df_paliers_combined["Début"]
+    ).dt.days
+
+    ### Variable cible (target) ### (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.test:[165:189]
+==src.visualization.fissures_visualization:[563:587]
+        else:  # Segments plats (pente nulle)
+            avg_value = np.mean(y_old_combined[start : end + 1])
+            y_pred = np.full(end + 1 - start, avg_value)
+            segments_old.append((df_combined_old.index[start : end + 1], y_pred))
+            paliers_old.append(
+                [df_combined_old.index[start], df_combined_old.index[end], avg_value]
+            )
+
+    # Générer les segments pour la deuxième phase
+    segments_new = []
+    paliers_new = []  # Liste pour stocker les paliers
+
+    for i in range(len(manual_breaks_new) - 1):
+        start = manual_breaks_new[i]
+        end = manual_breaks_new[i + 1]
+        if i % 2 == 0:  # Segments plats (pente nulle)
+            avg_value = np.mean(y_new_combined[start : end + 1])
+            y_pred = np.full(end + 1 - start, avg_value)
+            segments_new.append((df_combined_new.index[start : end + 1], y_pred))
+            paliers_new.append(
+                [df_combined_new.index[start], df_combined_new.index[end], avg_value]
+            )
+
+    # Création des DataFrames pour les paliers (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[73:92]
+==src.visualization.fissures_visualization:[499:518]
+    manual_breaks_old_dates = [
+        "2010-12-01",
+        "2012-06-01",
+        "2013-04-01",
+        "2013-06-01",
+        "2014-04-01",
+        "2014-06-01",
+        "2015-03-01",
+        "2015-10-01",
+        "2016-03-01",
+        "2016-09-01",
+        "2016-12-10",
+        "2017-07-01",
+        "2018-03-15",
+        "2018-04-15",
+        "2019-02-01",
+        "2019-07-01",
+        "2020-09-01",
+    ] (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.fissures:[206:233]
+==src.analysis.models:[266:291]
+        )
+
+        # Calculer la RMSE
+        rmse = np.sqrt(mean_squared_error(df["Bureau"], y_pred))
+
+        # Vérifier si cette combinaison de paramètres donne une meilleure RMSE
+        if rmse < best_rmse:
+            best_rmse = rmse
+            best_params = {"it": it, "delta": delta}
+
+    # Régression LOESS pour la première phase avec les meilleurs paramètres
+    loess_smoothed_first = lowess(
+        first_phase_data["Bureau"],
+        first_phase_data["Days"],
+        it=best_params["it"],
+        delta=best_params["delta"],
+    )
+
+    # Régression LOESS pour la deuxième phase avec les meilleurs paramètres
+    loess_smoothed_second = lowess(
+        second_phase_data["Bureau"],
+        second_phase_data["Days"],
+        it=best_params["it"],
+        delta=best_params["delta"],
+    )
+
+    # Création du graphique (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.test:[129:151]
+==src.visualization.fissures_visualization:[160:182]
+    durations = []
+    for i in range(len(df_paliers)):
+        start_date = df_paliers.iloc[i]["Début"]
+        end_date = df_paliers.iloc[i]["Fin"]
+        duration = (end_date - start_date).days
+        durations.append(duration)
+    return durations
+
+
+# Calcul des hauteurs des segments verticaux
+def calculate_heights(df_paliers):
+    heights = []
+    for i in range(len(df_paliers) - 1):
+        height = (
+            df_paliers.iloc[i + 1]["Valeur moyenne"]
+            - df_paliers.iloc[i]["Valeur moyenne"]
+        )
+        heights.append(height)
+    return heights
+
+
+# Générer les segments pour la première phase (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[551:567]
+==src.visualization.structure_visualization:[726:742]
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="center",
+    color="blue",
+)
+
+# Socle béton
+ax2.annotate(
+    "Socle béton",
+    xy=(8 - (taille_socle - largeur_ipn) / 2, -taille_socle / 2 - 0.3),
+    xytext=(13, -taille_socle / 2 - 0.3),
+    arrowprops=dict( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.meteo:[39:62]
+==src.data_processing.meteo_processing:[20:40]
+    df_cleaned.loc[outlier.index, "Outdoor Tem.Min(°C)"] = np.nan
+    df_cleaned["Outdoor Tem.Min(°C)"].interpolate(method="linear", inplace=True)
+
+    df_cleaned["Wind direction sin"] = np.sin(np.radians(df_cleaned["Wind direction"]))
+    df_cleaned["Wind direction cos"] = np.cos(np.radians(df_cleaned["Wind direction"]))
+
+    skewed_columns = [
+        "Outdoor Hum.Max(%)",
+        "Rainfull(Hour)(mm)",
+        "Rainfull(Day)(mm)",
+        "Wind speed(km/h)",
+        "Light intensity",
+        "UV rating",
+    ]
+
+    for column in skewed_columns:
+        df_cleaned[column + "_log"] = np.log1p(df_cleaned[column])
+
+    # Changement parvenu le 6/10/2024
+    # Remplir les valeurs manquantes de 'Wind speed(km/h)' avec 0 (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[278:295]
+==src.visualization.structure_visualization:[789:806]
+    columns_to_standardize = [
+        "Tassement_Differentiel_IPN",
+        "Tassement_Mur",
+        "Tassement_Colline",
+        "Corrosion_Index",
+        "Fatigue_Factor",
+        "Degradation_Factor",
+    ]
+
+    # Standardiser les colonnes à l'aide de StandardScaler
+    scaler = StandardScaler()
+    df_standardized = pd.DataFrame(
+        scaler.fit_transform(df_paliers_combined[columns_to_standardize]),
+        columns=columns_to_standardize,
+    )
+
+    # Création de la figure pour les boxplots (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[197:216]
+==src.visualization.structure_visualization:[62:80]
+    df_paliers_combined["Degradation_Factor"] = np.exp(
+        -0.01 * df_paliers_combined["Building_Age"]
+    )
+    df_paliers_combined["Palier_Duration"] = (
+        df_paliers_combined["Fin"] - df_paliers_combined["Début"]
+    ).dt.days
+
+    # Afficher les valeurs constantes une seule fois
+    print(f"IPN_Moment_Inertia: {IPN_Moment_Inertia}")
+    print(f"IPN_Rigidite_Flexion: {IPN_Rigidite_Flexion}")
+    print(f"IPN_Section: {IPN_Section}")
+    print(f"IPN_Stress_Factor: {IPN_Stress_Factor}")
+
+    return df_paliers_combined
+
+
+# Chargement et préparation des données
+chemin = "data/Fissures/"
+df_fissures, df_fissures_old = chargement_donnees(chemin) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==src.analysis.models:[1170:1185]
+==src.visualization.structure_visualization:[46:59]
+        )
+        df_paliers_combined["Tassement_Differentiel_IPN"] = np.log1p(
+            df_paliers_combined["IPN_Age"]
+        )
+        df_paliers_combined["Tassement_Mur"] = (
+            np.log1p(df_paliers_combined["Building_Age"]) * 0.5
+        )
+        df_paliers_combined["Tassement_Colline"] = (
+            np.log1p(df_paliers_combined["Building_Age"]) * 0.1
+        )
+        df_paliers_combined["Corrosion_Index"] = np.log1p(
+            df_paliers_combined["Building_Age"]
+        ) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[401:415]
+==src.visualization.structure_visualization:[621:635]
+        ),
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Dalle plafond
+    ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[453:467]
+==src.visualization.structure_visualization:[569:583]
+    ),
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="center",
+)
+
+# Dalle plafond
+ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[533:546]
+==src.visualization.structure_visualization:[692:705]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Mur de soutènement
+    ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[454:467]
+==src.visualization.structure_visualization:[657:670]
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="center",
+)
+
+# Dalle plafond
+ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[425:438]
+==src.visualization.structure_visualization:[641:654]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="bottom",
+    )
+
+    # Mur du bâtiment
+    ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[517:530]
+==src.visualization.structure_visualization:[622:635]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Dalle plafond
+    ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[402:415]
+==src.visualization.structure_visualization:[593:606]
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="center",
+)
+
+# Gravier
+ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[486:499]
+==src.visualization.structure_visualization:[570:583]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Gravier
+    ax2.annotate( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[99:111]
+==src.visualization.fissures_visualization:[517:530]
+    ]
+
+    manual_breaks_old = [
+        df_combined_old.index.get_loc(
+            df_combined_old.index[
+                df_combined_old.index.get_indexer(
+                    [pd.to_datetime(date)], method="nearest"
+                )[0]
+            ]
+        )
+        for date in manual_breaks_old_dates
+    ] (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[51:64]
+==src.visualization.fissures_visualization:[444:459]
+    df_new["Bureau_new_adjusted"] = predicted_start + scaling_factor * (
+        df_new["Bureau"] - df_new["Bureau"].iloc[0]
+    )
+
+    # Concaténer les deux séries
+    df_combined = pd.concat(
+        [
+            df_old[["Date", "Bureau_old"]].rename(columns={"Bureau_old": "Bureau"}),
+            df_new[["Date", "Bureau_new_adjusted"]].rename(
+                columns={"Bureau_new_adjusted": "Bureau"}
+            ),
+        ]
+    )
+
+    # Configurer l'index sur la colonne 'Date' (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.fissures:[185:204]
+==src.analysis.models:[223:240]
+    it_values = np.linspace(3, 50, 5, dtype=int)
+    delta_values = np.linspace(0, 100, 5)
+
+    best_rmse = float("inf")
+    best_params = {}
+
+    # Effectuer la recherche par grille
+    for it, delta in itertools.product(it_values, delta_values):
+        # Régression LOESS pour la première phase
+        loess_smoothed_first = lowess(
+            first_phase_data["Bureau"], first_phase_data["Days"], it=it, delta=delta
+        )
+
+        # Régression LOESS pour la deuxième phase
+        loess_smoothed_second = lowess(
+            second_phase_data["Bureau"], second_phase_data["Days"], it=it, delta=delta
+        )
+
+        # Concaténer les prédictions des deux phases (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[501:550]
+==src.visualization.structure_visualization:[675:725]
+        xytext=(
+            13,
+            hauteur_mur_sout + largeur_poutre + 0.15 / 2 + 0.3,
+        ),  # Position de l'annotation
+        arrowprops=dict(
+            facecolor="black", shrink=0.05, width=0.5, headwidth=4, headlength=6
+        ),
+        # Propriétés de la flèche
+        ha="center",
+        va="center",
+    )
+
+    # Poutre béton
+    ax2.annotate(
+        "Poutre béton",
+        xy=(8, hauteur_mur_sout + hauteur_poutre / 2),
+        xytext=(13, hauteur_mur_sout + hauteur_poutre / 2),
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Mur de soutènement
+    ax2.annotate(
+        "Mur de soutènement",
+        xy=(appui_colline + epaisseur_mur_sout / 2, hauteur_mur_sout / 2 - 0.5),
+        xytext=(13, hauteur_mur_sout / 2 - 0.5),
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # IPN
+    ax2.annotate(
+        "IPN",
+        xy=(7.0 + largeur_ipn / 2, hauteur_ipn / 2 + 0.3),
+        xytext=(13, hauteur_ipn / 2 + 0.3),
+        arrowprops=dict( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[566:579]
+==src.visualization.structure_visualization:[570:582]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Gravier (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.test:[101:113]
+==src.visualization.fissures_visualization:[524:536]
+        ]
+    )
+    for date in manual_breaks_old_dates
+]
+
+# Points de rupture pour la deuxième phase avec 5 segments
+manual_breaks_new_dates = [
+    "2023-12-01",
+    "2024-01-15",
+    "2024-02-01",
+    "2024-06-01",
+    "2024-07-05", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.fissures:[17:27]
+==src.data_processing.fissures_processing:[7:19]
+    df.columns = [
+        "Date",
+        "Bureau",
+        "Mur extérieur",
+        "Variation Bureau",
+        "Variation Mur",
+    ]
+    df["Date"] = pd.to_datetime(df["Date"])
+    df.sort_values("Date", inplace=True)
+    df["Days"] = (df["Date"] - df["Date"].min()).dt.days
+
+    # Chargement du deuxième fichier Fissure_old.xlsx depuis la feuille Feuil3 (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.meteo:[477:489]
+==src.main:[89:99]
+variable_base_names = [
+    "Indoor Tem(°C)",
+    "Indoor Tem.Max(°C)",
+    "Indoor Tem.Min(°C)",
+    "Outdoor Tem(°C)",
+    "Outdoor Tem.Max(°C)",
+    "Outdoor Tem.Min(°C)",
+    "Indoor Hum(%)",
+    "Outdoor Hum(%)",
+]
+
+# Tracer des grandeurs statistiques hebdomadaires (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[91:101]
+==scripts.test:[104:115]
+    ]
+    manual_breaks_new_dates = [
+        "2023-12-01",
+        "2024-01-15",
+        "2024-02-01",
+        "2024-06-01",
+        "2024-07-05",
+        "2024-09-01",
+    ]
+ (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[36:47]
+==scripts.test:[19:32]
+    df_old_filtered = df_old[df_old["Date"] >= "2015-01-01"]
+    X_old_filtered = (
+        df_old_filtered["Date"] - df_old_filtered["Date"].min()
+    ).dt.days.values.reshape(-1, 1)
+    y_old_filtered = df_old_filtered["Bureau_old"].values
+    model = LinearRegression().fit(X_old_filtered, y_old_filtered)
+
+    # Prédiction pour le début de la nouvelle phase
+    X_new_start = np.array(
+        [(df_new["Date"].iloc[0] - df_old_filtered["Date"].min()).days]
+    ).reshape(-1, 1) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[551:562]
+==src.visualization.structure_visualization:[743:754]
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+        color="blue",
+    )
+
+    # Ajuster les axes et afficher les plans (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[549:558]
+==src.visualization.structure_visualization:[570:579]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[401:410]
+==src.visualization.structure_visualization:[640:649]
+    ),
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[140:152]
+==src.visualization.fissures_visualization:[582:597]
+            paliers_new.append(
+                [df_combined_new.index[start], df_combined_new.index[end], avg_value]
+            )
+
+    # Création des DataFrames pour les paliers
+    df_paliers_old = pd.DataFrame(
+        paliers_old, columns=["Début", "Fin", "Valeur moyenne"]
+    )
+    df_paliers_new = pd.DataFrame(
+        paliers_new, columns=["Début", "Fin", "Valeur moyenne"]
+    )
+ (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[110:123]
+==src.visualization.fissures_visualization:[539:552]
+    ]
+    manual_breaks_new = [
+        df_combined_new.index.get_loc(
+            df_combined_new.index[
+                df_combined_new.index.get_indexer(
+                    [pd.to_datetime(date)], method="nearest"
+                )[0]
+            ]
+        )
+        for date in manual_breaks_new_dates
+    ]
+
+    # Générer les paliers pour la première phase (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[486:494]
+==src.visualization.structure_visualization:[641:649]
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[470:478]
+==src.visualization.structure_visualization:[593:601]
+    arrowprops=dict(
+        facecolor="black",
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[425:433]
+==src.visualization.structure_visualization:[570:578]
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[331:358]
+==src.visualization.structure_visualization:[426:453]
+    )
+    ax2.add_patch(ipn_cote)
+
+    # Remblai (vue de côté) - sous le mur de soutènement et entourant les socles des IPN, sans les masquer
+    remblai = patches.Polygon(
+        [(3.2, 0), (10, 0), (10, -1.5), (7.0 - (taille_socle - largeur_ipn) / 2, -1.5)],
+        closed=True,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="yellow",
+    )
+    ax2.add_patch(remblai)
+
+    # Ajouter les socles sous les IPN dans la vue de côté
+    socle_cote = patches.Rectangle(
+        (7.0 - (taille_socle - largeur_ipn) / 2, -taille_socle),
+        taille_socle,
+        taille_socle,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax2.add_patch(socle_cote)
+
+    # Fissure (vue de côté)
+
+    # Coordonnées de départ et de fin pour la fissure (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.fissures:[285:293]
+==src.analysis.models:[488:496]
+    for i in range(2, n + 1):
+        subset = df.iloc[:i]
+        slope, intercept, r_value, p_value, std_err = linregress(
+            subset["Days"], subset["Bureau"]
+        )
+        x = np.array([min(subset["Days"]), max(subset["Days"])])
+        y = slope * x + intercept
+        alpha = i / n (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[434:469]
+==src.visualization.structure_visualization:[602:637]
+    )
+
+    # Isolation
+    ax2.annotate(
+        "Isolation",
+        xy=(
+            8,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit / 2,
+        ),
+        xytext=(
+            13,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit / 2
+            - 0.3,
+        ),
+        arrowprops=dict(
+            facecolor="black",
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center",
+    )
+
+    # Dalle plafond
+    ax2.annotate(
+        "Dalle plafond",
+        xy=(8, hauteur_mur_sout + hauteur_batiment + epaisseur_dalle_toit / 2), (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[456:463]
+==src.visualization.structure_visualization:[743:750]
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center",
+    va="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[404:411]
+==src.visualization.structure_visualization:[726:733]
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center",
+        va="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[112:119]
+==src.visualization.structure_visualization:[327:334]
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit
+            + epaisseur_gravier
+            - 0.20,
+        ), (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[240:247]
+==src.visualization.structure_visualization:[200:207]
+        hauteur_mur_sout
+        + hauteur_batiment
+        + epaisseur_dalle_toit
+        + epaisseur_isolation_toit
+        + epaisseur_gravier
+        - 0.20,
+    ), (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[91:98]
+==src.visualization.fissures_visualization:[527:536]
+    ]
+    manual_breaks_new_dates = [
+        "2023-12-01",
+        "2024-01-15",
+        "2024-02-01",
+        "2024-06-01",
+        "2024-07-05", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==src.analysis.models:[1136:1145]
+==src.visualization.structure_visualization:[22:31]
+        construction_year = 1959
+        df_paliers_combined["Building_Age"] = (
+            df_paliers_combined["Début"].dt.year - construction_year
+        )
+        df_paliers_combined["Building_Age"] = df_paliers_combined["Building_Age"].apply(
+            lambda x: max(x, 1)
+        )
+
+        # Les propriétés IPN sont constantes, nous les stockons dans des variables séparées (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[279:285]
+==src.visualization.structure_visualization:[894:900]
+        "Tassement_Differentiel_IPN",
+        "Tassement_Mur",
+        "Tassement_Colline",
+        "Corrosion_Index",
+        "Fatigue_Factor",
+        "Degradation_Factor", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[316:322]
+==src.visualization.structure_visualization:[790:796]
+        "Tassement_Differentiel_IPN",
+        "Tassement_Mur",
+        "Tassement_Colline",
+        "Corrosion_Index",
+        "Fatigue_Factor",
+        "Degradation_Factor", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[575:590]
+==src.visualization.structure_visualization:[751:767]
+)
+
+
+# Ajuster les axes et afficher les plans
+ax1.set_aspect("equal")
+ax2.set_aspect("equal")
+
+# Supprimer les axes pour la vue de face
+ax1.set_axis_off()
+
+# Supprimer les axes pour la vue de côté
+ax2.set_axis_off()
+
+
+plt.subplots_adjust(left=0.05, right=0.95, top=1, bottom=0, wspace=0.05) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[472:478]
+==src.visualization.structure_visualization:[743:749]
+            shrink=0.05,
+            width=width,
+            headwidth=headwidth,
+            headlength=headlength,
+        ),
+        ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[427:433]
+==src.visualization.structure_visualization:[726:732]
+        shrink=0.05,
+        width=width,
+        headwidth=headwidth,
+        headlength=headlength,
+    ),
+    ha="center", (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[202:208]
+==src.visualization.structure_visualization:[442:448]
+        taille_socle,
+        taille_socle,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    ) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[347:353]
+==src.visualization.structure_visualization:[290:296]
+            taille_socle,
+            taille_socle,
+            linewidth=1,
+            edgecolor="black",
+            facecolor="darkgray",
+        ) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[180:186]
+==src.visualization.structure_visualization:[421:427]
+        largeur_ipn,
+        hauteur_ipn,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="blue",
+    ) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.test:[151:158]
+==src.visualization.fissures_visualization:[552:560]
+segments_old = []
+paliers_old = []  # Liste pour stocker les paliers
+
+for i in range(len(manual_breaks_old) - 1):
+    start = manual_breaks_old[i]
+    end = manual_breaks_old[i + 1]
+    if i == 0:  # Premier segment partant du premier point de mesure (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.meteo:[113:121]
+==src.data_processing.meteo_processing:[160:167]
+df_cleaned = pd.merge_asof(
+    df_cleaned.sort_values("Time"),
+    weekly_stats.reset_index().sort_values("Time"),
+    on="Time",
+    direction="backward",
+)
+
+# Sauvegarde du dataset pour les travaux futurs (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==src.analysis.models:[1186:1194]
+==src.visualization.structure_visualization:[62:70]
+    df_paliers_combined["Degradation_Factor"] = np.exp(
+        -0.01 * df_paliers_combined["Building_Age"]
+    )
+    df_paliers_combined["Palier_Duration"] = (
+        df_paliers_combined["Fin"] - df_paliers_combined["Début"]
+    ).dt.days
+
+    ### Variable cible (target) ### (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[315:335]
+==src.visualization.structure_visualization:[893:913]
+    columns = [
+        "Tassement_Differentiel_IPN",
+        "Tassement_Mur",
+        "Tassement_Colline",
+        "Corrosion_Index",
+        "Fatigue_Factor",
+        "Degradation_Factor",
+        "Valeur moyenne",
+        "Building_Age",
+        "IPN_Age",
+        "Palier_Duration",
+    ]
+
+    # Standardiser les colonnes avec StandardScaler
+    scaler = StandardScaler()
+    df_standardized = pd.DataFrame(
+        scaler.fit_transform(df_paliers_combined[columns]), columns=columns
+    )
+
+    # Calculer la matrice de corrélation de Pearson (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[416:421]
+==src.visualization.structure_visualization:[607:612]
+    xy=(
+        8,
+        hauteur_mur_sout
+        + hauteur_batiment
+        + epaisseur_dalle_toit (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[439:444]
+==src.visualization.structure_visualization:[584:589]
+        xy=(
+            8,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.plan:[268:330]
+==src.visualization.structure_visualization:[358:420]
+        largeur_batiment,
+        epaisseur_isolation_toit,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="lightgray",
+    )
+    ax2.add_patch(isolation_cote)
+
+    gravier_cote = patches.Rectangle(
+        (
+            epaisseur_mur_sout,
+            hauteur_mur_sout
+            + hauteur_batiment
+            + epaisseur_dalle_toit
+            + epaisseur_isolation_toit,
+        ),
+        largeur_batiment,
+        epaisseur_gravier,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="gray",
+    )
+    ax2.add_patch(gravier_cote)
+
+    # Colline (vue de côté)
+    colline = patches.Polygon(
+        [
+            (-1, hauteur_mur_sout + 1.2),
+            (7.0 - (taille_socle - largeur_ipn) / 2, -1.5),
+            (-1, -1.5),
+        ],
+        closed=True,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="green",
+    )
+    ax2.add_patch(colline)
+
+    # Dalle de sol (vue de côté) - 15 cm d'épaisseur, placée au-dessus des poutres
+    dalle_sol_cote = patches.Rectangle(
+        (epaisseur_mur_sout, hauteur_mur_sout + largeur_poutre),
+        longueur_poutre,
+        0.15,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="darkgray",
+    )
+    ax2.add_patch(dalle_sol_cote)
+
+    # Poutre en béton (vue côté)
+    poutre_cote = patches.Rectangle(
+        (epaisseur_mur_sout, hauteur_mur_sout),
+        longueur_poutre,
+        hauteur_poutre,
+        linewidth=1,
+        edgecolor="black",
+        facecolor="gray",
+    )
+    ax2.add_patch(poutre_cote)
+
+    # IPN sous la poutre (vue côté) - Positionné à 20 cm de l'extrémité de la poutre
+    ipn_cote = patches.Rectangle( (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[134:139]
+==src.visualization.fissures_visualization:[573:579]
+    paliers_new = []  # Liste pour stocker les paliers
+
+    for i in range(len(manual_breaks_new) - 1):
+        start = manual_breaks_new[i]
+        end = manual_breaks_new[i + 1]
+        if i % 2 == 0:  # Segments plats (pente nulle) (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==scripts.structure:[23:32]
+==src.data_processing.fissures_processing:[19:25]
+    df_old = pd.read_excel(f"{chemin}Fissure_old.xlsx", sheet_name="Feuil3")
+    df_old.columns = ["date", "bureau_old"]
+    df_old["Date"] = pd.to_datetime(df_old["date"])
+    df_old["Bureau_old"] = df_old["bureau_old"].astype(float)
+
+    return df, df_old (duplicate-code)
+scripts\test.py:1:0: R0801: Similar lines in 2 files
+==src.analysis.models:[460:465]
+==src.main:[129:134]
+        second_phase_data,
+        third_phase_data,
+        fourth_phase_data,
+        fifth_phase_data,
+        sixth_phase_data, (duplicate-code)
+
+------------------------------------------------------------------
+Your code has been rated at 6.90/10 (previous run: 6.90/10, +0.00)
+

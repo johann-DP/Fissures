@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+catboost
+joblib
+rich
+python-pptx
+pymannkendall
+astral
+statsmodels
+pyyaml>=6.0
+paramiko>=2.12
