@@ -5,6 +5,9 @@ import numpy as np
 import pandas as pd
 from scipy.stats import t
 
+from logger import get_logger
+logger = get_logger(__name__)
+
 
 # ---------------------------------------------------------------- daily-stats
 def calculate_daily_stats(df: pd.DataFrame):
@@ -51,7 +54,7 @@ def calculate_daily_stats(df: pd.DataFrame):
             daily.at[idx, 'max'] = ext.at[d, 'val_max']
         # sinon laisser NaN
         else:
-            print("\ncalculate_daily_stats: day not in index\n", d)
+            logger.info(f"aggregation.py/calculate_daily_stats:{d}, day not in index")
 
     # 5) diff_mm
     daily['diff_mm'] = (daily['max'] - daily['min']) * 25.4
