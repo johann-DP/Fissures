@@ -47,6 +47,8 @@ from prophet import Prophet  # import du modèle Prophet pour les prévisions
 
 from pathlib import Path
 from config import load_config
+from logger import get_logger
+logger = get_logger(__name__)
 
 
 warnings.filterwarnings("ignore")
@@ -68,8 +70,6 @@ hostname = cfg["ssh"]["host"]
 port     = cfg["ssh"]["port"]
 username = cfg["ssh"]["user"]
 password = cfg["ssh"]["password"]
-
-console = Console()
 
 
 def print_system_status():
@@ -118,6 +118,12 @@ def print_system_status():
     table.add_row("Last CSV update", last_ts)
 
     console.print(Panel(table, title="Raspberry Pi Status", expand=False))
+
+    # résumé texte dans le log
+    logger.info(
+        f"Pi disk {used}/{total} ({percent}) | RAM {mem_used_gb:.1f}/{mem_total_gb:.1f} GB "
+        f"({float(mem_percent):.1f} %) | Service={svc_status} | Last CSV={last_ts}"
+        )
 
 
 # ---------------------------------------------------------- 1. FETCH / LOAD

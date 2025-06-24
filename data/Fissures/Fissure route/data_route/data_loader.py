@@ -7,7 +7,10 @@ from datetime import datetime, timedelta
 
 from pathlib import Path
 from config import load_config
+from logger import get_logger
+
 cfg = load_config()
+logger = get_logger(__name__)
 
 
 def fetch_remote_csv() -> None:
@@ -30,9 +33,9 @@ def fetch_remote_csv() -> None:
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         backup_file = backup_dir / f"{local_path.stem}_{stamp}{local_path.suffix}"
         shutil.copy2(local_path, backup_file)
-        print(f"Sauvegarde effectuée → {backup_file}")
+        logger.info(f"Sauvegarde effectuée → {backup_file}")
     else:
-        print("Aucun fichier local à sauvegarder (premier import).")
+        logger.info("Aucun fichier local à sauvegarder (premier import).")
 
     # ---------- Transfert SFTP
     try:
@@ -41,9 +44,9 @@ def fetch_remote_csv() -> None:
         with paramiko.SFTPClient.from_transport(transport) as sftp:
             sftp.get(remote_path, str(local_path))
         transport.close()
-        print(f"Transfert réussi : {remote_path} → {local_path}")
+        logger.info(f"Transfert réussi : {remote_path} → {local_path}")
     except Exception as exc:
-        print(f"[ERREUR] transfert SFTP : {exc}")
+        logger.warning(f"Échec transfert SFTP : {exc}")
 
 
 def load_data(start_day_str: str, end_day_str: str) -> pd.DataFrame:
