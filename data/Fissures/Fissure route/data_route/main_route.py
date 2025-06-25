@@ -48,16 +48,15 @@ from prophet import Prophet  # import du modèle Prophet pour les prévisions
 from pathlib import Path
 from config import load_config
 from logger import get_logger
-logger = get_logger(__name__)
+import argparse
+import sys
 
+logger = get_logger(__name__)
 
 warnings.filterwarnings("ignore")
 
 # ---------------------------------------------------------------- Paramètres
 cfg = load_config()
-
-START_DAY_STR  = cfg["analysis"]["start_day_default"]
-END_DAY_STR = datetime.now().strftime('%Y-%m-%d')
 
 LOCAL_CSV      = cfg["paths"]["local_csv"]
 REMOTE_CSV     = cfg["paths"]["remote_csv"]
@@ -70,6 +69,33 @@ hostname = cfg["ssh"]["host"]
 port     = cfg["ssh"]["port"]
 username = cfg["ssh"]["user"]
 password = cfg["ssh"]["password"]
+
+
+def parse_args(cfg):
+    parser = argparse.ArgumentParser(
+        description="Dash Fissure Route – analyse temporelle"
+    )
+    parser.add_argument(
+        "--start-date",
+        type=str,
+        metavar="YYYY-MM-DD",
+        default=cfg["analysis"]["start_day_default"],
+        help="Premier jour inclus dans l’analyse (format ISO)",
+    )
+    args = parser.parse_args()
+
+    # Validation format
+    try:
+        datetime.strptime(args.start_date, "%Y-%m-%d")
+    except ValueError:
+        sys.exit("⛔  --start-date doit être au format YYYY-MM-DD")
+
+    # Validation future
+    today = datetime.now().date()
+    if datetime.strptime(args.start_date, "%Y-%m-%d").date() >= today:
+        sys.exit("⛔  --start-date ne peut pas être dans le futur")
+
+    return args
 
 
 def print_system_status():
@@ -125,6 +151,14 @@ def print_system_status():
         f"({float(mem_percent):.1f} %) | Service={svc_status} | Last CSV={last_ts}"
         )
 
+
+# ---------------------------------------------------------- 0. CLI --start-date
+args = parse_args(cfg)
+
+START_DAY_STR = args.start_date
+END_DAY_STR   = datetime.now().strftime('%Y-%m-%d')
+
+logger.info("Date de début retenue : %s", START_DAY_STR)
 
 # ---------------------------------------------------------- 1. FETCH / LOAD
 print_system_status()
