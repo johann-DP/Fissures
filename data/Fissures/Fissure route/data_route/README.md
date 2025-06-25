@@ -83,7 +83,7 @@ ssh:
   user: johan
   password: "••••••"
 paths:
-  local_csv: data/measurements.csv
+  local_csv: data/Fissures/'Fissure route'/data_route/measurements.csv/measurements.csv
   remote_csv: /home/johan/measurements.csv
 analysis:
   start_day_default: 2025-03-31
