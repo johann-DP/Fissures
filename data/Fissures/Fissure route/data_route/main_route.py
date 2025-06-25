@@ -5,7 +5,7 @@ l’onglet de corrélation Heure/Valeur et l’onglet de prévisions Prophet.
 """
 import os
 import warnings
-from datetime import datetime
+from datetime import datetime, date
 import pandas as pd
 import numpy as np
 import dash
@@ -72,6 +72,11 @@ password = cfg["ssh"]["password"]
 
 
 def parse_args(cfg):
+    # -------- valeur par défaut (str ou date)
+    default_start = cfg["analysis"]["start_day_default"]
+    if isinstance(default_start, (datetime, date)):
+        default_start = default_start.strftime("%Y-%m-%d")
+
     parser = argparse.ArgumentParser(
         description="Dash Fissure Route – analyse temporelle"
     )
@@ -79,22 +84,29 @@ def parse_args(cfg):
         "--start-date",
         type=str,
         metavar="YYYY-MM-DD",
-        default=cfg["analysis"]["start_day_default"],
+        default=default_start,
         help="Premier jour inclus dans l’analyse (format ISO)",
     )
     args = parser.parse_args()
 
-    # Validation format
+    # -------- normaliser ce qui vient d’argparse
+    start_raw = args.start_date
+    start_str = (
+        start_raw.strftime("%Y-%m-%d")
+        if isinstance(start_raw, (datetime, date))
+        else start_raw
+    )
+
+    # -------- validations
     try:
-        datetime.strptime(args.start_date, "%Y-%m-%d")
+        datetime.strptime(start_str, "%Y-%m-%d")
     except ValueError:
         sys.exit("⛔  --start-date doit être au format YYYY-MM-DD")
 
-    # Validation future
-    today = datetime.now().date()
-    if datetime.strptime(args.start_date, "%Y-%m-%d").date() >= today:
+    if datetime.strptime(start_str, "%Y-%m-%d").date() >= datetime.now().date():
         sys.exit("⛔  --start-date ne peut pas être dans le futur")
 
+    args.start_date = start_str          # on renvoie toujours une str
     return args
 
 
