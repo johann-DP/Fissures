@@ -2,11 +2,15 @@
 from __future__ import annotations
 from typing import Tuple, Dict
 import numpy as np
+from numpy.typing import NDArray
 import pandas as pd
 from scipy.stats import t
+from scipy import stats
 
 from logger import get_logger
 logger = get_logger(__name__)
+
+log = get_logger(__name__)
 
 
 # ---------------------------------------------------------------- daily-stats
@@ -69,27 +73,72 @@ def calculate_daily_stats(df: pd.DataFrame):
 
 
 # ------------------------------------------------------- Student + bootstrap
+def _bootstrap_ci(sample: np.ndarray,
+                  alpha: float = .05,
+                  B: int = 1_500) -> Tuple[float, float]:
+    """
+    IC non‑paramétrique (percentile) pour la moyenne d'un échantillon 1‑D.
+    Retourne (ci_lower, ci_upper).  Renvoie (nan, nan) si len(sample) < 3.
+    """
+    n = sample.size
+    if n < 3:
+        return np.nan, np.nan
+
+    rng    = np.random.default_rng()
+    draws  = rng.integers(0, n, size=(B, n))     # matrice (B, n)
+    boots  = sample[draws].mean(axis=1)          # moyenne sur l'axe n
+    lo, hi = np.percentile(boots, [100*alpha/2, 100*(1 - alpha/2)])
+    return float(lo), float(hi)
+
+
 def calculate_confidence_intervals(df: pd.DataFrame,
                                    daily_stats: pd.DataFrame,
-                                   force_normal_test: bool = True):
-    ci_lo, ci_hi, normal = [], [], []
+                                   *,
+                                   force_normal_test: bool = False,
+                                   alpha: float = .05,
+                                   B: int = 1_500) -> pd.DataFrame:
+    """
+    Ajoute :
+        ci_lower,  ci_upper      (Student t, inch → normal présumé)
+        ci_lower_np, ci_upper_np (bootstrap np pour même échantillon)
+        normal (bool)            True ↔ utiliser IC Student ; False ↔ IC bootstrap
+    Les colonnes historiques restent donc intactes.
+    """
+    ci_lo, ci_hi, ci_lo_np, ci_hi_np, normal = [], [], [], [], []
+
     for day, g in df.groupby("day")['inch']:
-        n = len(g)
+        arr = g.to_numpy()
+        n   = arr.size
+
+        # ----------- cas n < 3  ------------------------------------------
         if n < 3:
             ci_lo.append(np.nan)
             ci_hi.append(np.nan)
+            ci_lo_np.append(np.nan)
+            ci_hi_np.append(np.nan)
             normal.append(False)
             continue
-        m, s = g.mean(), g.std(ddof=1)
-        margin = t.ppf(0.975, n - 1) * s / np.sqrt(n)
+
+        # ----------- IC Student‑t (héritage) -----------------------------
+        m, s  = arr.mean(), arr.std(ddof=1)
+        margin = t.ppf(1 - alpha/2, n - 1) * s / np.sqrt(n)
         ci_lo.append(m - margin)
         ci_hi.append(m + margin)
-        normal.append(force_normal_test)
-    daily_stats = daily_stats.copy()
-    daily_stats['ci_lower'] = ci_lo
-    daily_stats['ci_upper'] = ci_hi
-    daily_stats['normal'] = normal
-    return daily_stats
+        normal.append(force_normal_test)  # force_normal_test = True ? → rectangles verts
+
+        # ----------- IC bootstrap ---------------------------------------
+        lo_np, hi_np = _bootstrap_ci(arr, alpha=alpha, B=B)
+        ci_lo_np.append(lo_np)
+        ci_hi_np.append(hi_np)
+
+    out = daily_stats.copy()
+    out['ci_lower']     = ci_lo
+    out['ci_upper']     = ci_hi
+    out['ci_lower_np']  = ci_lo_np
+    out['ci_upper_np']  = ci_hi_np
+    out['normal']       = normal
+
+    return out
 
 
 # ---------------------------------------------------- agrégation ½-heure etc.
