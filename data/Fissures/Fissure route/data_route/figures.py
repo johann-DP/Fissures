@@ -96,10 +96,11 @@ def create_fig_main(df, daily_stats, global_min, global_max, colors):
             name=stat.capitalize(),
             hovertemplate=f"{stat.capitalize()}<br>%{{y:.3f}} inch"
         ))
-    # Intervalle de confiance (vert si normal assumé, violet si non-param)
+    # Intervalle de confiance (vert si normal assumé, violet sinon)
     for _, row in daily_stats.iterrows():
+
         if (
-                row['normal']
+                row.get('normal', False)  # Student‑t
                 and not np.isnan(row.get('ci_lower'))
                 and not np.isnan(row.get('ci_upper'))
         ):
@@ -107,21 +108,23 @@ def create_fig_main(df, daily_stats, global_min, global_max, colors):
                 type="rect",
                 x0=row['day_start'], x1=row['day_end'],
                 y0=row['ci_lower'], y1=row['ci_upper'],
-                fillcolor='rgba(0,128,0,0.2)',
+                fillcolor='rgba(0,128,0,0.20)',  # vert
                 line=dict(width=0), xref="x", yref="y"
             )
+
         elif (
-                not row['normal']
-                and not np.isnan(row.get('ci_lower_np', np.nan))
-                and not np.isnan(row.get('ci_upper_np', np.nan))
+                (not row.get('normal', True))  # bootstrap
+                and not np.isnan(row.get('ci_lower_np'))
+                and not np.isnan(row.get('ci_upper_np'))
         ):
             fig.add_shape(
                 type="rect",
                 x0=row['day_start'], x1=row['day_end'],
                 y0=row['ci_lower_np'], y1=row['ci_upper_np'],
-                fillcolor='rgba(128,0,128,0.2)',
+                fillcolor='rgba(128,0,128,0.20)',  # violet
                 line=dict(width=0), xref="x", yref="y"
             )
+
     # Lignes pointillées pour global min et global max
     fig.add_shape(
         type="line",
