@@ -253,15 +253,30 @@ jm_annot_min = (
 md_center_max, md_margin_max, md_annot_max = jm_center_max, jm_margin_max, jm_annot_max
 md_center_min, md_margin_min, md_annot_min = jm_center_min, jm_margin_min, jm_annot_min
 
-# Debug : affichage console des résultats bootstrap sur extrêmes quotidiens
-print("\n──────── Bootstrap : Heures extrêmes quotidiennes ────────")
+# Affichage console des résultats bootstrap sur extrêmes quotidiens
+logger.info("──────── Bootstrap : Heures extrêmes quotidiennes ────────")
 for lab in ("max", "min"):
     s = ext_stats[lab]
     ci = s['ci']
-    print(f"{lab.upper()} → {s['law']}  params={s['params']}  "
+    logger.info(f"{lab.upper()} → {s['law']}  params={s['params']}  "
           f"µ CI95 [{ci['mean_lo']:.2f},{ci['mean_hi']:.2f}]  "
           f"médiane CI95 [{ci['median_lo']:.2f},{ci['median_hi']:.2f}]  "
           f"σ CI95 [{ci['sigma_lo']:.2f},{ci['sigma_hi']:.2f}]")
+
+logger.info("──────── CI Student vs Bootstrap (jour par jour) ────────")
+for _, row in daily_stats.iterrows():
+    if np.isnan(row['ci_lower']) or np.isnan(row['ci_lower_np']):
+        continue     # skip jours incomplets / invalides
+    w_student   = row['ci_upper']    - row['ci_lower']
+    w_bootstrap = row['ci_upper_np'] - row['ci_lower_np']
+    logger.info(
+        "%s  normal=%s | pSW=%.3g pJB=%.3g pKS=%.3g | "
+        "width_t=%.4f  width_boot=%.4f  Δ=%.4f",
+        row['day_start'].date(),
+        row['normal'],
+        row['p_sw'], row['p_jb'], row['p_ks'],
+        w_student, w_bootstrap, w_bootstrap - w_student
+    )
 
 # ---------------------------------------------------------- 7. Préparation pour analyses des valeurs
 # Bins de 0.01 inch et agrégation pour valeur vs heure

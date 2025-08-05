@@ -4,7 +4,7 @@ from typing import Tuple, Dict
 import numpy as np
 from numpy.typing import NDArray
 import pandas as pd
-from scipy.stats import t
+from scipy.stats import shapiro, jarque_bera, kstest, norm, t
 from scipy import stats
 
 from logger import get_logger
@@ -87,14 +87,25 @@ def _bootstrap_ci(sample: np.ndarray,
     rng    = np.random.default_rng()
     draws  = rng.integers(0, n, size=(B, n))     # matrice (B, n)
     boots  = sample[draws].mean(axis=1)          # moyenne sur l'axe n
-    lo, hi = np.percentile(boots, [100*alpha/2, 100*(1 - alpha/2)])
-    return float(lo), float(hi)
+    # lo, hi = np.percentile(boots, [100*alpha/2, 100*(1 - alpha/2)])
+    return np.percentile(boots, [100*alpha/2, 100*(1 - alpha/2)]) # float(lo), float(hi)
+
+
+def _normality_pvals(x: np.ndarray) -> Dict[str, float]:
+    """Renvoie les p‑values des trois tests ; NaN si effectif < 3."""
+    if x.size < 3:
+        return dict(sw=np.nan, jb=np.nan, ks=np.nan)
+    sw_p = shapiro(x).pvalue
+    jb_p = jarque_bera(x).pvalue
+    ks_p = kstest(x, 'norm',
+                  args=(x.mean(), x.std(ddof=1))).pvalue
+    return dict(sw=sw_p, jb=jb_p, ks=ks_p)
 
 
 def calculate_confidence_intervals(df: pd.DataFrame,
                                    daily_stats: pd.DataFrame,
                                    *,
-                                   force_normal_test: bool = False,
+                                   ALPHA_NORM = .05,
                                    alpha: float = .05,
                                    B: int = 1_500) -> pd.DataFrame:
     """
@@ -102,42 +113,51 @@ def calculate_confidence_intervals(df: pd.DataFrame,
         ci_lower,  ci_upper      (Student t, inch → normal présumé)
         ci_lower_np, ci_upper_np (bootstrap np pour même échantillon)
         normal (bool)            True ↔ utiliser IC Student ; False ↔ IC bootstrap
-    Les colonnes historiques restent donc intactes.
+        p‑values normalité.
     """
-    ci_lo, ci_hi, ci_lo_np, ci_hi_np, normal = [], [], [], [], []
+    ci_lo, ci_hi, ci_lo_np, ci_hi_np = [], [], [], []
+    normal, p_sw, p_jb, p_ks = [], [], [], []
 
     for day, g in df.groupby("day")['inch']:
         arr = g.to_numpy()
-        n   = arr.size
+        n = arr.size
 
-        # ----------- cas n < 3  ------------------------------------------
-        if n < 3:
+        # ---------- normality tests ------------------------------------
+        pvals = _normality_pvals(arr)
+        is_normal = (
+                pvals['sw'] > ALPHA_NORM and
+                pvals['jb'] > ALPHA_NORM and
+                pvals['ks'] > ALPHA_NORM
+        )
+        normal.append(is_normal)
+        p_sw.append(pvals['sw'])
+        p_jb.append(pvals['jb'])
+        p_ks.append(pvals['ks'])
+
+        # ---------- IC Student (possible même si pas normal) ----------
+        if n >= 3:
+            mean, sd = arr.mean(), arr.std(ddof=1)
+            margin = t.ppf(1 - alpha / 2, n - 1) * sd / np.sqrt(n)
+            ci_lo.append(mean - margin)
+            ci_hi.append(mean + margin)
+        else:
             ci_lo.append(np.nan)
             ci_hi.append(np.nan)
-            ci_lo_np.append(np.nan)
-            ci_hi_np.append(np.nan)
-            normal.append(False)
-            continue
 
-        # ----------- IC Student‑t (héritage) -----------------------------
-        m, s  = arr.mean(), arr.std(ddof=1)
-        margin = t.ppf(1 - alpha/2, n - 1) * s / np.sqrt(n)
-        ci_lo.append(m - margin)
-        ci_hi.append(m + margin)
-        normal.append(force_normal_test)  # force_normal_test = True ? → rectangles verts
-
-        # ----------- IC bootstrap ---------------------------------------
-        lo_np, hi_np = _bootstrap_ci(arr, alpha=alpha, B=B)
+        # ---------- IC bootstrap --------------------------------------
+        lo_np, hi_np = _bootstrap_ci(arr, alpha, B)
         ci_lo_np.append(lo_np)
         ci_hi_np.append(hi_np)
 
     out = daily_stats.copy()
-    out['ci_lower']     = ci_lo
-    out['ci_upper']     = ci_hi
-    out['ci_lower_np']  = ci_lo_np
-    out['ci_upper_np']  = ci_hi_np
-    out['normal']       = normal
-
+    out['ci_lower'] = ci_lo
+    out['ci_upper'] = ci_hi
+    out['ci_lower_np'] = ci_lo_np
+    out['ci_upper_np'] = ci_hi_np
+    out['normal'] = normal
+    out['p_sw'] = p_sw
+    out['p_jb'] = p_jb
+    out['p_ks'] = p_ks
     return out
 
 

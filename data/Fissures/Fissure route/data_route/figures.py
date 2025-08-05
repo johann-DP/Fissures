@@ -142,7 +142,7 @@ def create_fig_main(df, daily_stats, global_min, global_max, colors):
         line=dict(color=colors['min'], dash='dot', width=2),
         opacity=0.8, layer="above"
     )
-    # Annotations pour les écarts en mm (différences quotidienne et vs global)
+    # Annotations pour les écarts en mm (différences quotidiennes et vs global)
     for _, row in daily_stats.iterrows():
         if not np.isnan(row.get('diff_mm')):
             fig.add_annotation(

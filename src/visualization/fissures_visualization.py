@@ -540,8 +540,7 @@ def preprocessing_old_new(df_fissures, df_fissures_old):
         "2025-03-02",
         "2025-05-04",
         "2025-05-18",
-        "2025-06-08",
-        "2025-06-22",
+        "2025-08-03",
     ]
     manual_breaks_new = [
         df_combined_new.index.get_loc(
